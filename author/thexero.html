@@ -1,0 +1,20 @@
+---
+layout: category
+title: Author TheXero
+description: This page contains the posts made by the author TheXero.
+thumbnail: /images/wifi-episode-2-200x200.png
+image: /images/wifi-episode-2.png
+---
+
+<div id="home">
+  <h1>Author: TheXero</h1>
+  <h4>This page contains the posts made by the author TheXero.</h4>
+  <br />
+  <ul class="posts">
+   {% for post in site.posts %}
+    {% if post.author | downcase = thexero %}
+   <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+   {% endfor %}
+  </ul>
+</div> 

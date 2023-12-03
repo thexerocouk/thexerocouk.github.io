@@ -1,0 +1,23 @@
+---
+layout: post
+title:  Automated HTTP Enumeration
+date:   2013-04-15
+author: TheXero
+comments: true
+categories: tools
+description: One of the more popular tools developed over the years, the HTTP Enum tool. This python tool assists with the manual tasks of fingerprinting of HTTP servers as well as attempts to identify a small number of deployed web technologies.
+excerpt: A tool I’ve been writing to enumerate the enabled HTTP methods supported on a webserver. Currently only in the initial beta stage, but includes basic checking of files including the...
+tags: [http, automated, tool, python]
+thumbnail: /images/tools-http-enum-200x200.png
+image: /images/tools-http-enum.png
+---
+
+A tool I’ve been writing to enumerate the enabled HTTP methods supported on a webserver.
+
+Currently only in the initial beta stage, but includes basic checking of files including the Apache server-status as well as well IIS WebDAV and Microsoft FrontPage Extensions, many more features will be added to this tool which will make alot of the enumeration process quick and simple.
+
+Version 0.2 adds scanning of SSL / TLS as well as an option for probing delays and general bug fixes.
+
+Version 0.3 adds support for vMicrosoft SharePoint as well as WebDAV for Apache httpd.
+
+The Python Script and files can be downloaded from <a href="https://github.com/nullsecuritynet/tools/raw/master/scanner/http-enum/release/http-enum-0.4.tar.gz" target="_blank">https://github.com/nullsecuritynet/tools/raw/master/scanner/http-enum/release/http-enum-0.4.tar.gz</a>

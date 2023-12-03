@@ -1,0 +1,27 @@
+- image: slide-1.jpg
+  desc_location: left
+  desc:
+    <div class="medium-6 large-6 columns">
+    <h2>Abusing The Stack</h2><br/>
+    We then load the program into Immunity Debugger
+    and attempt to replicate the crash once again and
+    hopefully it will tell us a little bit more about
+    the crash. In this case the target application
+    crashed because EIP has been completely overwritten
+    with 41414141 which is the hex equivalent to ...
+    <div class='one spacing'></div>
+    <a class='button boxed' href='exploit-development/abusing-the-stack'>Read More</a>
+- image: slide-1.jpg
+  desc_location: right
+  desc:
+    <div class="medium-6 large-6 columns"></div>
+    <div class="medium-6 large-6 columns">
+    <h2>Abusing The Stack</h2><br/>
+    We then load the program into Immunity Debugger
+    and attempt to replicate the crash once again and
+    hopefully it will tell us a little bit more about
+    the crash. In this case the target application
+    crashed because EIP has been completely overwritten
+    with 41414141 which is the hex equivalent to ...
+    <div class='one spacing'></div>
+    <a class='button boxed' href='exploit-development/abusing-the-stack'>Read More</a>

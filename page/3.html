@@ -1,0 +1,38 @@
+---
+layout: default
+title: Security Consultant and Exploit Developer | Page 3
+section_id: home
+description: Home of TheXero, a Security Consultant and Exploit developer. Creator of several offsensive security tools such as http-enum, conscan and many more.
+---
+
+<div class='full'>
+  <div class='row'>
+   <div id="home">
+    <h1>Latest Posts - Page 3</h1>
+     <div class="posts">
+      {% for post in site.posts offset:11 limit:5%}
+      <article class="post">
+       <div class='timestamp left text-center'>
+        <span class='month'>{{ post.date | date: "%h" }}</span>
+        <span class='date'>{{ post.date | date: "%d" }}</span>
+       </div>
+       <div class='info'>
+        <h3><a href='{{post.url}}'>{{ post.title }}</a></h3>
+        <p>Author: <span class='author'><a href='/author/{{ post.author | downcase }}'>{{ post.author }}</a> | Category: <a href='/{{ post.categories }}'>{{ post.categories }}</a></span></p>
+        <div class="entry">
+         <p>{{ post.excerpt | strip_html }}</p>
+          <br />
+          <a href="{{ post.url }}">Read More</a>
+          <hr>
+        </div>
+       </div>
+      </article>
+      {% endfor %}
+      <div class="pagination">
+       <div class="alignleft"><a href="/page/4" title="Older Entries">« Older Entries</a></div>
+       <div class="alignright"><a href="/page/2" title="Newer Entries">Newer Entries »</a></div>
+      </div>
+     </div>
+   </div> 
+  </div>
+</div>

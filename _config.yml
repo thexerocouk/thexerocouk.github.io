@@ -1,0 +1,8 @@
+name: TheXero
+markdown: kramdown
+highlighter: pygments
+url: https://www.thexero.co.uk
+permalink: /:categories/:title
+title: TheXero
+exclude: 
+  - training
