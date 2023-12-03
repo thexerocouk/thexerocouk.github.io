@@ -1,7 +1,7 @@
 name: TheXero
 markdown: kramdown
 highlighter: pygments
-url: https://www.thexero.co.uk
+url: https://thexerocouk.github.io
 permalink: /:categories/:title
 title: TheXero
 exclude: 
