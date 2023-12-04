@@ -1,6 +1,6 @@
 name: TheXero
 markdown: kramdown
 highlighter: pygments
-url: https://thexerocouk.github.io
+url: https://www.thexero.co.uk
 permalink: /:categories/:title
 title: TheXero
