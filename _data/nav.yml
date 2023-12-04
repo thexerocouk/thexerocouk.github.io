@@ -1,24 +1,24 @@
 - name: Home
-  path: 
+  path: /
   section_id: home
 - name: Advisories
-  path: advisories
+  path: /advisories
   section_id: advisories
 - name: Exploit Development
-  path: exploit-development
+  path: /exploit-development
   section_id: exploit-development
 - name: Tools
-  path: tools
+  path: /tools
   section_id: tools
 - name: WiFi
-  path: wifi
+  path: /wifi
   section_id: wifi
 - name: Blog
   path: blog
   section_id: blog
 - name: Store
-  path: store
+  path: /store
   section_id: store
 - name: About
-  path: about
+  path: /about
   section_id: about
