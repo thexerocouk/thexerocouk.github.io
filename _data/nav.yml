@@ -19,6 +19,9 @@
 - name: Store
   path: store
   section_id: store
+- name: Training
+  path: training
+  section_id: training
 - name: About
   path: about
   section_id: about
