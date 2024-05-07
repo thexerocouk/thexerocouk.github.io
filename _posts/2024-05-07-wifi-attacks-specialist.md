@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Exciting News: WiFi Attacks Specialist Course
+title:  WiFi Attacks Specialist Course
 date:   2024-05-07
 author: TheXero
 comments: true
@@ -8,8 +8,6 @@ categories: blog
 description: We are very excited and proud to announce our WiFi Attacks Specialist course has officially landed and is ready for enrolment.
 excerpt: Our WiFi Attacks Specialist course is designed to take a new comer to WiFi to reach the status of WiFi Penetration Tester in the quickest time possible. The course features an interactive lab environment, turning the taught theory into practical hands-on experience with our world-class lab environment.
 tags: [wifi, wifu, aircrack, rogue, evil twin, penetration testing]
-thumbnail:
-image:
 ---
 
 After much anticipation, we are very excited to announce the launch of our WiFi Attacks Specialist course. The course is now ready for enrolment and is designed to take a new comer to WiFi to reach the status of WiFi Penetration Tester in the quickest time possible. The course features our world-class lab environment, turning the taught theoretical knownledge into practical hands-on experience.
