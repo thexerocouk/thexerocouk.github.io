@@ -7,7 +7,7 @@ comments: true
 categories: blog
 description: But here's the kicker, WiFi isn't just about checking your Instagram feed or sending off that last-minute report. Nope, it's way bigger than that. Businesses are ditching those clunky on-site servers faster than you can say "cloud computing." 
 excerpt: But here's the kicker, WiFi isn't just about checking your Instagram feed or sending off that last-minute report. Nope, it's way bigger than that. Businesses are ditching those clunky on-site servers faster than you can say "cloud computing." 
-tags: [cloud,psk,wpa,wifi,wireless ]
+tags: [cloud,psk,wpa,wifi,wireless]
 thumbnail: ...
 image: ...
 ---
