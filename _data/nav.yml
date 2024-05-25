@@ -16,9 +16,9 @@
 - name: Blog
   path: blog
   section_id: blog
-- name: Store
-  path: store
-  section_id: store
+- name: Merch
+  path: merch
+  section_id: merch
 - name: Training
   path: training
   section_id: training
