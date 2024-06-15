@@ -1,6 +1,6 @@
---
+---
 layout: post
-title:  Why Channel Bleed Is a Hackers Best Friend
+title: Why Channel Bleed Is a Hackers Best Friend
 date:	2024-06-15
 author: TheXero
 comments: true
@@ -8,8 +8,8 @@ categories: blog
 description: Uncover how channel bleed in Wi-Fi networks becomes a hackers playground. Learn why its a serious threat—from data interception to DoS attacks. Discover how to protect your network with our Wi-Fi Attacks Specialist Course.
 excerpt: Discover why channel bleed in Wi-Fi networks is a hackers best friend. Learn how it exposes your data to interception and opens doors to DoS attacks. Protect your network with our Wi-Fi Attacks Specialist Course.
 tags: [ wifi, wireless, training, hacker, channel ]
-thumbnail: ...
-image: ...
+thumbnail: /
+image: /
 ---
 
 Introduction
