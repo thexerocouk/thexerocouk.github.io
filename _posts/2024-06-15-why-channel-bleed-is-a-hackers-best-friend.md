@@ -61,9 +61,9 @@ By measuring the strength and pattern of channel bleed across multiple channels,
 If all this talk about channel bleed and Wi-Fi vulnerabilities has you feeling a bit paranoid, there are ways to turn this knowledge into power. Consider diving deeper into the mechanics of Wi-Fi security to better understand both the threats and the defences.
 
 #### Wi-Fi Attacks Specialist Course
-For those interested in learning more, theres a [https://training.thexero.co.uk/p/wifi-specialist](course) designed to equip you with the skills to both understand and defend against these kinds of attacks. Whether you’re a network administrator looking to bolster your defences or a cybersecurity enthusiast eager to learn the ropes, this course covers the latest tools and techniques hackers use, and more importantly, how to protect your network from these attacks.
+For those interested in learning more, theres a [course](https://training.thexero.co.uk/p/wifi-specialist) designed to equip you with the skills to both understand and defend against these kinds of attacks. Whether you’re a network administrator looking to bolster your defences or a cybersecurity enthusiast eager to learn the ropes, this course covers the latest tools and techniques hackers use, and more importantly, how to protect your network from these attacks.
 
 ### Conclusion
 While channel bleed is usually seen as a minor annoyance, it’s a goldmine for hackers. From eavesdropping and DoS attacks to exploiting weak configurations and pinpointing device locations, channel bleed offers endless opportunities for malicious activities. This is why it’s crucial to plan your spectrum usage carefully, use robust encryption, and monitor your network vigilantly. Understanding how hackers exploit channel bleed isn’t just about staying informed—it’s about staying safe. Are you prepared?
 
-If you are ready to take your knowledge to the next level, consider exploring resources like our [https://training.thexero.co.uk/p/wifi-specialist](Wi-Fi Attacks Specialist Course) to learn how to protect your network from the dark arts of Wi-Fi hacking.
+If you are ready to take your knowledge to the next level, consider exploring resources like our [Wi-Fi Attacks Specialist Course](https://training.thexero.co.uk/p/wifi-specialist) to learn how to protect your network from the dark arts of Wi-Fi hacking.
