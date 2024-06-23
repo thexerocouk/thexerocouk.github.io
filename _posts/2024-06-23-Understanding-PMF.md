@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Understand Protected Management Frames (PMF) in Wi-Fi
+title:  Understanding Protected Management Frames
 date:	2024-06-23
 author: TheXero
 comments: true
