@@ -8,8 +8,8 @@ categories: blog
 description: Discover the importance of Protected Management Frames (PMF) in Wi-Fi networks. Learn how PMF secures management frames, preventing tampering and unauthorised injections. Explore the different configuration states of PMF and understand its role in enhancing Wi-Fi security. Stay tuned for our next post on how attackers defeat PMF and how to protect your network against advanced threats.
 excerpt: Discover the importance of Protected Management Frames (PMF) in Wi-Fi networks. Learn how PMF secures management frames, preventing tampering and unauthorised injections. Explore the different configuration states of PMF and understand its role in enhancing Wi-Fi security. Stay tuned for our next post on how attackers defeat PMF and how to protect your network against advanced threats.
 tags: [pmf,wpa,wifi,wireless,training]
-thumbnail: /images/pfm.png
-image: /images/pfm.png
+thumbnail: /images/pmf.png
+image: /images/pmf.png
 ---
 
 ### Understanding Protected Management Frames (PMF) in Wi-Fi
