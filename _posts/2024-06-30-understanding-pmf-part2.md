@@ -28,7 +28,7 @@ With this understanding of what Protected Management Frames (PMF) are, it's time
 ### State Machine
 First, let's take a closer look at the Wi-Fi state machine:
 
-![[/images/state_machine.png]]
+![state_machine](images/state_machine.png)
 
 In the context of PMF, protection only applies to states one through three, as well as the De-authentication and Disassociation frames. With PMF enabled, it becomes impossible to inject frames and interfere directly with the state machine during these states.
 
