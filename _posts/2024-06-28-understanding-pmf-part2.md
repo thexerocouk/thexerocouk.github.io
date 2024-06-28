@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  Understanding Protected Management Frames - Part 2
-date:	2024-06-30 
+date:	2024-06-28 
 author: TheXero
 comments: true
 categories: blog
 description: Protected Management Frames (PMF) enhance Wi-Fi security but have limitations, such as not covering Open or WEP networks and the WPA-Personal handshake. Vulnerabilities can be exploited through passive listening, evil twin APs, and Wi-Fi jamming. Understanding these gaps is crucial for better Wi-Fi security.
 excerpt: Protected Management Frames (PMF) enhance Wi-Fi security but have limitations, such as not covering Open or WEP networks and the WPA-Personal handshake. Vulnerabilities can be exploited through passive listening, evil twin APs, and Wi-Fi jamming. Understanding these gaps is crucial for better Wi-Fi security.
-tags: [ training, ]
-thumbnail: images/security-breach.jpg
-image: images/security-breach.jpg
+tags: [ wifi, training ]
+thumbnail: /images/security-breach.jpg
+image: /images/security-breach.jpg
 ---
 
 Before diving into the main content of this post, let's quickly recap the essentials of Protected Management Frames (PMF).
