@@ -23,5 +23,5 @@
   path: training/
   section_id: training
 - name: About
-  path: about/
+  path: about
   section_id: about
