@@ -56,4 +56,4 @@ This will trigger a SIGSEGV signal and the service will exit. Both the LDAP and 
 
 CVE-2015-8149 was assigned to address this issue.
 
-Further details around the patches deployed for the appliance and the Symantec security advisory for these issues can be found at the following link: <a href="https://support.symantec.com/us/en/article.SYMSA1346.html" target="_blank">https://support.symantec.com/us/en/article.SYMSA1346.html</a>
+Further details around the patches deployed for the appliance and the Symantec security advisory for these issues can be found at the following link: <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/0/0/SYMSA1346" target="_blank">https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/0/0/SYMSA1346</a>
