@@ -5,7 +5,7 @@ date:   2014-06-07
 author: TheXero
 categories: blog
 description: A quick update for a couple of newly implemented features into the ConScan Concrete5 black-box vulnerability scanner.
-excerpt: Its been a while since an update to conscan has been made since it’s initial release last October. The new update introduces two new features Username disclosureSingle threaded account brute-forcing...
+excerpt: Its been a while since an update to conscan has been made since it’s initial release last October. The new update introduces two new features Username disclosure Single threaded account brute-forcing...
 tags: [conscan, concrete5, tool, python, blog]
 ---
 
