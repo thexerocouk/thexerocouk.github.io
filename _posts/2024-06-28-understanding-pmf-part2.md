@@ -6,7 +6,7 @@ author: TheXero
 comments: true
 categories: blog
 description: Learn about the limitations of Protected Management Frames (PMF) in Wi-Fi security, including gaps that can be exploited through passive listening, evil twin APs, and Wi-Fi jamming.
-excerpt: Discover the limitations of Protected Management Frames (PMF) in Wi-Fi security and how vulnerabilities can be exploited through various methods.
+excerpt: Learn about the limitations of Protected Management Frames (PMF) in Wi-Fi security, including gaps that can be exploited through passive listening, evil twin APs, and Wi-Fi jamming.
 tags: [wifi, training, PMF, Wi-Fi security, vulnerabilities]
 thumbnail: /images/security-breach.jpg
 image: /images/security-breach.jpg
