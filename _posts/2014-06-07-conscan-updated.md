@@ -14,4 +14,4 @@ Its been a while since an update to conscan has been made since it’s initial r
     Username disclosure
     Single threaded account brute-forcing 
 
-Version 1.2 of conscan can be found at the following URL: <a href="https://github.com/nullsecuritynet/tools/raw/master/scanner/conscan/release/conscan-1.2.tgz" target="_blank">https://github.com/nullsecuritynet/tools/raw/master/scanner/conscan/release/conscan-1.2.tgz</a>
+Version 1.2 of conscan can be found at the following URL: <a href="https://github.com/nullsecuritynet/tools/blob/main/scanner/conscan/release/conscan-1.2.tgz" target="_blank">https://github.com/nullsecuritynet/tools/blob/main/scanner/conscan/release/conscan-1.2.tgz</a>
