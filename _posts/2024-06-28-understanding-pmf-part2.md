@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding Protected Management Frames - Part 2 | TheXero
+title: Understanding Protected Management Frames - Part 2
 date: 2024-06-28
 author: TheXero
 comments: true
