@@ -2,25 +2,25 @@
   path: 
   section_id: home
 - name: Advisories
-  path: advisories
+  path: advisories/
   section_id: advisories
 - name: Exploit Development
-  path: exploit-development
+  path: exploit-development/
   section_id: exploit-development
 - name: Tools
-  path: tools
+  path: tools/
   section_id: tools
 - name: WiFi
-  path: wifi
+  path: wifi/
   section_id: wifi
 - name: Blog
-  path: blog
+  path: blog/
   section_id: blog
 - name: Merch
-  path: merch
+  path: merch/
   section_id: merch
 - name: Training
-  path: training
+  path: training/
   section_id: training
 - name: About
   path: about

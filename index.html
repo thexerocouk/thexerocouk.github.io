@@ -1,40 +1,69 @@
 ---
 layout: default
-title: Security Consultant and Exploit Developer
+title: Cybersecurity Trainer | Consultant & Exploit Developer
 section_id: home
-description: Home of TheXero, a Security Consultant and Exploit developer. Creator of several offsensive security tools such as http-enum, conscan and many more.
+description: Welcome to TheXero - Your premier destination for Cybersecurity Training, consulting, and exploit development. Discover advanced tools including http-enum and conscan.
 thumbnail: /images/logo.png
 image: /images/logo.png
 ---
 
 {% include slider.html %}
+
 <div class='full'>
   <div class='row'>
-   <div id="home">
-    <h1>Latest Posts</h1>
-     <div class="posts">
-      {% for post in site.posts limit:5%}
-      <article class="post">
-       <div class='timestamp left text-center'>
-        <span class='month'>{{ post.date | date: "%h" }}</span>
-        <span class='date'>{{ post.date | date: "%d" }}</span>
-       </div>
-       <div class='info'>
-        <h3><a href='{{post.url}}'>{{ post.title }}</a></h3>
-        <p>Author: <span class='author'><a href='/author/{{ post.author | downcase }}'>{{ post.author }}</a> | Category: <a href='/{{ post.categories }}'>{{ post.categories }}</a></span></p>
-        <div class="entry">
-         <p>{{ post.excerpt | strip_html }}</p>
-         <br />
-         <a href="{{ post.url }}">Read More →</a>
-         <hr>
+    <div id="home">
+      <h2>Latest Posts</h2>
+      <div class="posts">
+        {% for post in site.posts limit:5 %}
+          <article class="post">
+            <div class='timestamp left text-center'>
+              <span class='month'>{{ post.date | date: "%b" }}</span>
+              <span class='date'>{{ post.date | date: "%d" }}</span>
+            </div>
+            <div class='info'>
+              <h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
+              <p>Author: <span class='author'><a href='/author/{{ post.author | downcase }}'>{{ post.author }}</a></span> | Category: <a href='/category/{{ post.categories }}'>{{ post.categories }}</a></p>
+              <div class="entry">
+                <p>{{ post.excerpt | strip_html }}</p>
+                <br />
+                <a href="{{ post.url }}">Read More →</a>
+                <hr>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+        <div class="pagination">
+          <div class="alignleft"><a href="/page/2" title="Older Entries">« Older Entries</a></div>
         </div>
-       </div>
-      </article>
-      {% endfor %}
-      <div class="pagination">
-        <div class="alignleft"><a href="/page/2"  title="Older Entries">« Older Entries</a></div>
-     </div>
-   </div>
-  </div> 
- </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "image": "{{ site.url }}{{ page.image }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/logo.png"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}"
+}
+</script>

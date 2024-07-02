@@ -1,143 +1,147 @@
 <!DOCTYPE html>
 <html class='no-js' lang='en'>
     <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8; IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>{{ site.title }} | {{ page.title }}</title>
-      <link rel="shortcut icon" type="image/icon" href="/favicon.ico"/>
-      <meta name="robots" content="index, follow" />
-      <meta name="keywords" content="exploit, exploit developer, consultant, offensive tooling, offensive, tools, conscan, nullsploit, http-enum, thexero" />
-      <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
-      <meta property="og:site_name" content="{{ site.name }}" />
-      <meta property="og:url" content="{{ site.url }}{{page.url }}" />
-      {% if page.thumbnail %}<meta property="og:image" content="{{ site.url }}{{ page.thumbnail }}" />
-      <meta name="twitter:image" content="{{ site.url }}{{ page.thumbnail }}" /> {% endif %}
-      {% if page.title %}<meta property="og:title" content="{{ page.title }}" />
-      <meta property="twitter:title" content="{{ page.title }}" />{% endif %}
-      {% if page.description %}<meta name="description" content="{{ page.description }}" />
-      <meta property="og:description" content="{{ page.description }}" />
-      <meta property="twitter:description" content="{{ page.description }}" />{% endif %}
-      <link rel="canonical" href="{{ page.url | prepend: site.url }}" />
-      <link href='{{ site.url }}/css/framework.css' rel='stylesheet' />
-      <link href='{{ site.url }}/css/syntax.css' rel='stylesheet' />
-      <link href='{{ site.url }}/css/style.css' rel='stylesheet' />
-      <link href='{{ site.url }}/css/fontello.css' rel='stylesheet' />
-      <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/asciinema-player.css" />
-      <script src='{{ site.url }}/js/modernizr.js'></script>
-      <script src="{{ site.url }}/js/asciinema-player.js"></script>
-      
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148332326-1"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <link rel="shortcut icon" type="image/icon" href="/favicon.ico"/>
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="exploit development, offensive security training, penetration testing, offensive tools, offensive security consultant, conscan, nullsploit, http enumeration, thexero">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+        <meta property="og:site_name" content="{{ site.name }}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        {% if page.thumbnail %}
+        <meta property="og:image" content="{{ site.url }}{{ page.thumbnail }}" />
+        <meta name="twitter:image" content="{{ site.url }}{{ page.thumbnail }}" />
+        {% endif %}
+        {% if page.title %}
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="twitter:title" content="{{ page.title }}" />
+        {% endif %}
+        {% if page.description %}
+        <meta name="description" content="{{ page.description }}" />
+        <meta property="og:description" content="{{ page.description }}" />
+        <meta property="twitter:description" content="{{ page.description }}" />
+        {% endif %}
+        <link rel="canonical" href="{{ page.url | prepend: site.url }}" />
+        <link href='{{ site.url }}/css/framework.css' rel='stylesheet' />
+        <link href='{{ site.url }}/css/syntax.css' rel='stylesheet' />
+        <link href='{{ site.url }}/css/style.css' rel='stylesheet' />
+        <link href='{{ site.url }}/css/fontello.css' rel='stylesheet' />
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/asciinema-player.css" />
+        <script src='{{ site.url }}/js/modernizr.js'></script>
+        <script src="{{ site.url }}/js/asciinema-player.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJ347HP7C"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-      gtag('config', 'UA-148332326-1');
-      </script>
+            gtag('config', 'G-ZGJ347HP7C');
+        </script>
         <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/42a6ea919d1fbf2e1e7ee6289/de5fe359899b3a0b4afefb8ea.js");</script>
     </head>
     <body>
-      <div class='contain-to-grid sticky'>
-        <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
-          <ul class='title-area'>
-            <li class='name'>
-              <h1>
-                <img src='{{site.url}}/images/logo.png' alt='logo' />
-                <a href='/'>{{ site.name }}</a>
-              </h1>
-            </li>
-            <li class='toggle-topbar menu-icon'>
-              <a href='#'>Menu</a>
-            </li>
-          </ul>
-          <section class='top-bar-section'>
-            <ul class="right">
-              {% for item in site.data.nav %}
-                {% if item.section_id == page.section_id %}
-                  {% assign active_class = "active" %}
-                {% else %}
-                  {% assign active_class = "" %}
-                {% endif %}
-
-                {% if item.children %}
-                  <li class="has-dropdown {{active_class}}">
-                    <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
-                    <ul class='dropdown'>
-                      {% for child in item.children %}
-                        <li>
-                          <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
-                        </li>
-                      {% endfor %}
+        <div class='contain-to-grid sticky'>
+            <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+                <ul class='title-area'>
+                    <li class='name'>
+                        <h1>
+                            <img src='/images/logo.png' alt='logo' />
+                            <a href='/'>{{ site.name }}</a>
+                        </h1>
+                    </li>
+                    <li class='toggle-topbar menu-icon'>
+                        <a href='#'>Menu</a>
+                    </li>
+                </ul>
+                <section class='top-bar-section'>
+                    <ul class="right">
+                        {% for item in site.data.nav %}
+                            {% assign active_class = item.section_id == page.section_id ? "active" : "" %}
+                            {% if item.children %}
+                                <li class="has-dropdown {{active_class}}">
+                                    <a href="/{{ item.path }}">{{ item.name }}</a>
+                                    <ul class='dropdown'>
+                                        {% for child in item.children %}
+                                            <li>
+                                                <a href="/{{ child.path }}">{{ child.name }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% else %}
+                                <li class="{{active_class}}">
+                                    <a href="/{{ item.path }}">{{ item.name }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                     </ul>
-                  </li>
-                {% else %}
-                  <li class="{{active_class}}">
-                    <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </section>
-        </nav>
-      </div>
-      {{ content }}
-      <div class='footer centered-text'>
-        <div class='spacing'></div>
-        <div class='row'>
-          <div class='large-12 columns'></div>
-          <h1 class='light'>
-            <img src='{{site.url}}/logo.png' alt='logo' />
-            <br />
-            <div class='spacing'></div>
-            {{ site.name }}
-          </h1>
-          <div class='spacing'></div>
-          <div class='spacing'></div>
-          <div class='socials centered-text'>
-            <a href='https://twitter.com/thexerocouk'>
-              <i class='icon-twitter grey'></i>
-            </a>
-            <a href='https://www.facebook.com/thexerocouk'>
-              <i class='icon-facebook grey'></i>
-            </a>
-            <a href='https://www.github.com/thexerocouk'>
-              <i class='icon-github grey'></i>
-            </a>
-            <a href='mailto:webmaster@thexero.co.uk'>
-              <i class='icon-mail grey'></i>
-            </a>
-          </div>
-          <p class='copyright'>Copyright 2024 TheXero | For Education Purposes Only!</p>
+                </section>
+            </nav>
         </div>
-      </div>
-      <script src='{{ site.url }}/js/jquery.min.js'></script>
-      <script src='{{ site.url }}/js/foundation.min.js'></script>
-      <script src='{{ site.url }}/js/jquery.countTo.js'></script>
-      <script src='{{ site.url }}/js/jquery.appear.js'></script>
-      <script src='{{ site.url }}/js/app.js'></script>
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://www.thexero.co.uk",
-        "name": "TheXero",
-        "sameAs": "https://twitter.com/thexerocouk",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "webmaster@thexero.co.uk",
-          "contactType": "Webmaster"
-        }
-      }
-      </script>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJ347HP7C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZGJ347HP7C');
-</script>
+        {{ content }}
+        <div class='footer centered-text'>
+            <div class='spacing'></div>
+            <div class='row'>
+                <div class='large-12 columns'></div>
+                <h2 class='light'>
+                    <img src='/logo.png' alt='logo' />
+                    <br />
+                    <div class='spacing'></div>
+                    {{ site.name }}
+                </h2>
+                <div class='spacing'></div>
+                <div class='spacing'></div>
+                <div class='socials centered-text'>
+                    <a href='https://twitter.com/thexerocouk'>
+                        <i class='icon-twitter grey'></i>
+                    </a>
+                    <a href='https://www.facebook.com/thexerocouk'>
+                        <i class='icon-facebook grey'></i>
+                    </a>
+                    <a href='https://www.github.com/thexerocouk'>
+                        <i class='icon-github grey'></i>
+                    </a>
+                    <a href='mailto:webmaster@thexero.co.uk'>
+                        <i class='icon-mail grey'></i>
+                    </a>
+                </div>
+                <p class='copyright'>Copyright 2024 TheXero | For Education Purposes Only!</p>
+            </div>
+        </div>
+        <script src='/js/jquery.min.js'></script>
+        <script src='/js/foundation.min.js'></script>
+        <script src='/js/jquery.countTo.js'></script>
+        <script src='/js/jquery.appear.js'></script>
+        <script src='/js/app.js'></script>
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Blog",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{ site.url }}{{ page.url }}"
+              },
+              "headline": "{{ page.title }}",
+              "description": "{{ page.description }}",
+              "image": "{{ site.url }}{{ page.image }}",
+              "author": {
+                "@type": "Person",
+                "name": "{{ author }}"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "{{ site.name }}",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "{{ site.url }}/images/logo.png"
+                }
+              },
+              "datePublished": "{{ page.date | date_to_xmlschema }}",
+              "dateModified": "{{ page.date | date_to_xmlschema }}"}
+        </script>
     </body>
 </html>
