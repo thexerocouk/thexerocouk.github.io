@@ -118,22 +118,30 @@
         <script src='/js/jquery.appear.js'></script>
         <script src='/js/app.js'></script>
         <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "url": "https://www.thexero.co.uk",
-            "name": "TheXero",
-            "sameAs": [
-                "https://twitter.com/thexerocouk",
-                "https://www.facebook.com/thexerocouk",
-                "https://www.github.com/thexerocouk"
-            ],
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "email": "webmaster@thexero.co.uk",
-                "contactType": "Webmaster"
-            }
-        }
+            {
+              "@context": "https://schema.org",
+              "@type": "Blog",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{ site.url }}{{ page.url }}"
+              },
+              "headline": "{{ page.title }}",
+              "description": "{{ page.description }}",
+              "image": "{{ site.url }}{{ page.image }}",
+              "author": {
+                "@type": "Person",
+                "name": "{{ site.author }}"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "{{ site.name }}",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "{{ site.url }}/images/logo.png"
+                }
+              },
+              "datePublished": "{{ page.date | date_to_xmlschema }}",
+              "dateModified": "{{ page.date | date_to_xmlschema }}"}
         </script>
     </body>
 </html>
