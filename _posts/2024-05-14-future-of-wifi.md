@@ -5,11 +5,11 @@ date:	2024-05-13
 author: TheXero
 comments: true
 categories: blog
-description: But here's the kicker, WiFi isn't just about checking your Instagram feed or sending off that last-minute report. Nope, it's way bigger than that. Businesses are ditching those clunky on-site servers faster than you can say "cloud computing." 
-excerpt: But here's the kicker, WiFi isn't just about checking your Instagram feed or sending off that last-minute report. Nope, it's way bigger than that. Businesses are ditching those clunky on-site servers faster than you can say "cloud computing." 
+description: But here's the kicker, WiFi isn't just about checking your Instagram feed or sending off that last-minute report. Nope, it's way bigger than that. Businesses are ditching those clunky on-site servers faster than you can say `cloud computing.` 
+excerpt: But here's the kicker, WiFi isn't just about checking your Instagram feed or sending off that last-minute report. Nope, it's way bigger than that. Businesses are ditching those clunky on-site servers faster than you can say `cloud computing.` 
 tags: [cloud,psk,wpa,wifi,wireless,training]
-thumbnail: ...
-image: ...
+thumbnail: /images/future-of-wi-fi.png
+image: /images/future-of-wi-fi.png
 ---
 
 Alright, it's been a while, but let's talk WiFi. I mean, where would we be without it, right? It's everywhere! From the hipster coffee joint downtown to the bustling office towers uptown, WiFi is the unsung hero keeping us all connected in this digital age.
