@@ -22,7 +22,7 @@ image: /images/logo.png
             </div>
             <div class='info'>
               <h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
-              <p>Author: <span class='author'><a href='/author/{{ post.author | downcase }}'>{{ post.author }}</a></span> | Category: <a href='/category/{{ post.categories }}'>{{ post.categories }}</a></p>
+              <p>Author: <span class='author'><a href='/author/{{ post.author | downcase }}'>{{ post.author }}</a></span> | Category: <a href='/{{ post.categories }}'>{{ post.categories }}</a></p>
               <div class="entry">
                 <p>{{ post.excerpt | strip_html }}</p>
                 <br />
