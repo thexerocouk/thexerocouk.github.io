@@ -12,16 +12,10 @@
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         {% if page.thumbnail %}
         <meta property="og:image" content="{{ site.url }}{{ page.thumbnail }}" />
-        <meta name="twitter:image" content="{{ site.url }}{{ page.thumbnail }}" />
-        {% endif %}
-        {% if page.title %}
-        <meta property="og:title" content="{{ page.title }}" />
-        {% endif %}
-        {% if page.title %}
-        <meta property="og:type" content="article">
-        {% else %}
-        <meta property="og:type" content="website">
-        {% endif %}        
+        <meta name="twitter:image" content="{{ site.url }}{{ page.thumbnail }}" />{% endif %}
+        {% if page.title %}<meta property="og:title" content="{{ page.title }}" />{% endif %}
+        {% if page.title %}<meta property="og:type" content="article">{% else %}
+        <meta property="og:type" content="website">{% endif %}        
         <meta property="twitter:title" content="{{ page.title }}" />
         {% if page.description %}
         <meta name="description" content="{{ page.description }}" />
