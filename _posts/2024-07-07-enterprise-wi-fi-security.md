@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: Understanding Authentication in Enterprise Wi-Fi Security  
+title: Understanding Authentication in Enterprise Wi-Fi  
 date: 2024-07-07  
 author: TheXero  
 comments: true  
@@ -13,7 +13,7 @@ thumbnail: /images/eap-tls-flow.png
 image: /images/eap-tls-flow.png
 ---
 
-## Part 1: Understanding Authentication in Enterprise Wi-Fi Security
+## Part 1: Understanding Authentication in Enterprise Wi-Fi
 
 ![alt eap-flow](/images/eap-tls-flow.png)
 
