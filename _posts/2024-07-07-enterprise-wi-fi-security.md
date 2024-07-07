@@ -75,6 +75,6 @@ Used for multi-factor authentication, tokens and smart cards enhance security bu
 **Biometrics**  
 Emerging in modern authentication systems, biometrics offer high security and are difficult to replicate. However, they raise privacy concerns and require biometric hardware.
 
-#### Conclusion
+## Conclusion
 
 Understanding the various EAP methods, modes, and authentication mechanisms is crucial for securing enterprise Wi-Fi networks. By choosing the right EAP method and implementing robust authentication practices, enterprises can protect their networks from unauthorised access and ensure the integrity of their wireless communications. Stay tuned for Part 2, where we will explore common enterprise Wi-Fi attack techniques and how to defend against them.
