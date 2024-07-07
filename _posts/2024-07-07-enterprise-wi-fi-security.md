@@ -27,7 +27,7 @@ The Extensible Authentication Protocol (EAP) is a flexible framework designed fo
 ### Common EAP Methods
 
 **EAP-TLS (Transport Layer Security)**  
-EAP-TLS is renowned for its security, utilising mutual authentication that requires both the client and server to present valid digital certificates. This method provides strong security through mutual authentication and encryption but is complex and costly due to the need for a public key infrastructure (PKI).
+EAP-TLS is renowned for its security, utilising mutual authentication that requires both the client and server to present valid digital certificates. This method provides strong security through mutual authentication and encryption but is complex and costly due to the need for public key infrastructure (PKI).
 
 **EAP-TTLS (Tunnelled Transport Layer Security)**  
 EAP-TTLS creates a secure tunnel for client authentication using various mechanisms, such as passwords. It offers flexibility in choosing inner authentication methods and is easier to implement than EAP-TLS, though it is slightly less secure due to the potential use of weaker inner methods.
