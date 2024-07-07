@@ -8,11 +8,13 @@ categories: blog
 description: Explore the essential components of enterprise Wi-Fi security, focusing on the Extensible Authentication Protocol (EAP), its methods, modes, and mechanisms.  
 excerpt: Learn about EAP, its methods, modes, and authentication mechanisms critical for securing enterprise Wi-Fi networks.  
 tags: [training, wifi, enterprise Wi-Fi security, EAP, authentication, network security]  
-thumbnail: /images/eap-tls.png  
-image: /images/eap-tls.png
+thumbnail: /images/eap.png  
+image: /images/eap.png
 ---
 
 ### Part 1: Understanding Authentication in Enterprise Wi-Fi Security
+
+![alt eap-flow](/images/eap.png)
 
 #### Introduction
 
@@ -21,6 +23,8 @@ Enterprise Wi-Fi networks are critical infrastructure, necessitating robust secu
 #### What is EAP?
 
 The Extensible Authentication Protocol (EAP) is a flexible framework designed for transporting authentication protocols, commonly employed in wireless networks and point-to-point connections. EAP supports multiple authentication methods, enabling enterprises to select the most appropriate option for their security needs.
+
+
 
 #### Common EAP Methods
 
