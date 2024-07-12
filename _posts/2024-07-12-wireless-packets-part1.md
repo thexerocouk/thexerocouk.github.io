@@ -62,7 +62,7 @@ The **Duration/ID** field, spanning 2 bytes, serves dual purposes depending on t
 
 Each 6-byte (48-bit) address in the MAC header fulfils specific roles based on the ToDS and FromDS fields:
 
-![[images/addresses.png]]
+![[/images/addresses.png]]
 
 - **DA (Destination Address)**: Identifies the intended recipient of the frame.
 - **RA (Recipient Address)**: Typically used in mesh networks to specify the immediate recipient.
