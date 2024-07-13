@@ -94,7 +94,7 @@ This field contains the frame’s CRC (Cyclic Redundancy Check) value, ensuring 
 - **Deauthentication Frames**: Sent by an AP to terminate a client's authenticated session, prompting the client to re-authenticate to continue communication.
 - **Disassociation Frames**: Sent by a client to inform an AP of its desire to disconnect from the network.
 
-With the advent of [Protected Management Frames](blog/Understanding-PMF) [(PMF)](/blog/Understanding-PMF), management frames have become more secure. PMF enhances the security of management frames, protecting them from forgery and eavesdropping attacks. This feature is crucial for maintaining the integrity and confidentiality of network operations, especially in enterprise environments where the risk of malicious activity is higher.
+With the advent of [Protected Management Frames](Understanding-PMF) [(PMF)](Understanding-PMF), management frames have become more secure. PMF enhances the security of management frames, protecting them from forgery and eavesdropping attacks. This feature is crucial for maintaining the integrity and confidentiality of network operations, especially in enterprise environments where the risk of malicious activity is higher.
 
 Understanding these frame types is crucial for managing and securing wireless networks effectively, as each frame serves a distinct role in network operations and data transmission.
 
