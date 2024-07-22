@@ -7,7 +7,7 @@ comments: true
 categories: blog  
 description: A detailed guide on Control and Data Frames in Wi-Fi (802.11) networks.  
 excerpt: Learn about the types and functions of Control and Data frames in Wi-Fi (802.11) networks, enhancing your knowledge of wireless communication.  
-tags: [training, wireless networking]  
+tags: [training, wifi]  
 thumbnail: /images/control_frame_wrapper.png  
 image: /images/control_frame_wrapper.png  
 ---
