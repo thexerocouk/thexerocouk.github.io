@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: "Understanding Wireless Packets: Control and Data Frames in 802.11 Networks"  
-date: 2024-07-21  
+date: 2024-07-22 
 author: TheXero  
 comments: true  
 categories: blog  
