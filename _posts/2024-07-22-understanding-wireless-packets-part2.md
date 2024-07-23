@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: "Understanding Wireless Packets: Control and Data Frames in 802.11 Networks"  
+title: "Wireless Packets Part 2: Control and Data Frames"  
 date: 2024-07-22 
 author: TheXero  
 comments: true  
