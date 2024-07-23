@@ -1,18 +1,18 @@
 ---
 layout: category
-title: Author TheXero
-description: This page contains the posts made by the author TheXero.
+title: Author TheXero's Posts
+description: Explore insightful articles and posts authored by TheXero on our security blog. Stay updated with expert advice, tips, and the latest security trends.
 thumbnail: /images/wifi-episode-2-200x200.png
 image: /images/wifi-episode-2.png
 ---
 
 <div id="home">
   <h2>Author: TheXero</h2>
-  <h4>This page contains the posts made by the author TheXero.</h4>
+  <h4>Discover insightful articles and posts by TheXero. Stay updated with expert advice, tips, and the latest security trends.</h4>
   <br />
   <ul class="posts">
    {% for post in site.posts %}
-    {% if post.author | downcase = thexero %}
+    {% if post.author | downcase == "thexero" %}
    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
    {% endfor %}
