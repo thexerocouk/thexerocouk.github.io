@@ -7,24 +7,26 @@ description: Discover the powerful capabilities of the aircrack-ng suite in our 
 
 <div id="home">
   <h2>WiFi Network Hacking</h2>
-<h4>Discover the powerful capabilities of the aircrack-ng suite in our series of posts. Learn ethical hacking techniques to secure various WiFi networks with different configurations.</h4>  <br />
-     <div class="posts">
+  <h4>Explore the powerful capabilities of the aircrack-ng suite in our comprehensive posts. Learn ethical hacking techniques to secure various WiFi networks with different configurations.</h4>
+  <br />
+  <div class="posts">
       {% for post in site.categories.wifi %}
       <article class="post">
        <div class='timestamp left text-center'>
-        <span class='month'>{{ post.date | date: "%h" }}</span>
+        <span class='month'>{{ post.date | date: "%b" }}</span>
         <span class='date'>{{ post.date | date: "%d" }}</span>
        </div>
        <div class='info'>
         <h3><a href='{{post.url}}'>{{ post.title }}</a></h3>
-        <p>Author: <span class='author'><a href='/author/{{ post.author | downcase }}'>{{ post.author }}</a> | Category: <a href='/{{ post.categories }}'>{{ post.categories }}</a></span></p>
-        <div class="entry"><p>{{ post.excerpt | strip_html }}</p>
-         <br />
-         <a href="{{ post.url }}">Read More</a>
-         <hr>
+        <p>Author: <span class='author'><a href='/author/{{ post.author | downcase }}'>{{ post.author }}</a></span> | Category: <a href='/{{ post.categories }}'>{{ post.categories }}</a></p>
+        <div class="entry">
+          <p>{{ post.excerpt | strip_html }}</p>
+          <br />
+          <a href="{{ post.url }}">Read More</a>
+          <hr>
         </div>
        </div>
       </article>
       {% endfor %}
-     </div>
+  </div>
 </div> 
