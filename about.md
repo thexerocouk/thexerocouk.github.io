@@ -22,16 +22,15 @@ permalink: about
     <p>Gain practical skills through our interactive, hands-on training approach. We ensure that you are equipped with the knowledge and experience necessary to excel in the field of cyber security.</p>
     <p>Join a community of like-minded professionals committed to innovation and excellence in cyber security. Stay ahead of the curve with the latest trends and techniques in offensive security.</p>
 
-## Why Choose TheXero?
+  <p><h3>Why Choose TheXero?</h3></p>
+  <p><b>- Industry-Leading Experts:</b> Benefit from the insights of top security professionals.</p>
+  <p><b>- Practical Learning:</b> Engage in hands-on training for real-world application.</p>
+  <p><b>- Personalised Support:</b> Receive customised guidance tailored to your learning objectives.</p>
+  <p><b>- Collaborative Environment:</b> Be part of a supportive and innovative community.</p>
+<p><b>- Cutting-Edge Techniques:</b> Stay updated with the latest in offensive security.</p>
 
-- **Industry-Leading Experts**: Benefit from the insights of top security professionals.
-- **Practical Learning**: Engage in hands-on training for real-world application.
-- **Personalised Support**: Receive customised guidance tailored to your learning objectives.
-- **Collaborative Environment**: Be part of a supportive and innovative community.
-- **Cutting-Edge Techniques**: Stay updated with the latest in offensive security.
+<p><h3>Get Started</h3></p>
 
-## Get Started
-
-Discover the difference our dedicated approach can make for your career. [Join us on Discord today](https://discord.gg/YEfgvuqyDn) and elevate your cyber security skills.
+<p>Discover the difference our dedicated approach can make for your career. Join us on <a href=https://discord.gg/YEfgvuqyDn>Discord</a> today and elevate your cyber security skills.</p>
 
 </div>
