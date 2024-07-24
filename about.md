@@ -21,8 +21,6 @@ permalink: about
     <p>Learn from seasoned professionals who bring real-world experience to the classroom. Our instructors are dedicated to providing personalized guidance and support throughout your learning journey.</p>
     <p>Gain practical skills with our interactive, hands-on training approach. We ensure that you are equipped with the knowledge and experience necessary to excel in the field of cybersecurity.</p>
     <p>Join a community of like-minded professionals committed to innovation and excellence in cybersecurity. Stay ahead of the curve with the latest trends and techniques in offensive security.</p>
-  </div>
-</div>
 
 ## Why Choose TheXero?
 
@@ -34,4 +32,6 @@ permalink: about
 
 ## Get Started
 
-Discover the difference our dedicated approach can make for your career. [Join us today](#) and elevate your cybersecurity skills.
+Discover the difference our dedicated approach can make for your career. [Join us on Discord today](https://discord.gg/YEfgvuqyDn) and elevate your cybersecurity skills.
+
+  </div>
