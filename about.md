@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Us - Leading Offensive Security Training Provider
+title: About Us - Premier Offensive Security Training Provider
 section_id: about
 permalink: about
 ---
@@ -17,16 +17,21 @@ permalink: about
     <div class='spacing'></div>
   </div>
   <div class='row'>
-    <p>At the heart of our mission is a dedication to building strong, lasting relationships with our clients. As a leading training provider specializing in offensive security, we go beyond delivering courses — we are committed to understanding your unique learning goals and challenges.</p>
-    <p>Our expert instructors provide personalized guidance and support throughout your learning journey. Whether you're new to cybersecurity or looking to advance your skills, we empower you with practical knowledge and hands-on experience.</p>
-    <p>We aim to create a community where learning is collaborative and impactful. By choosing us, you join a network of professionals passionate about security and innovation, helping you stay ahead in today's dynamic threat landscape.</p>
-<p> 
-Why Choose Us for Offensive Security Training?
-Expert Instructors: Learn from industry leaders with real-world experience.
-Hands-On Learning: Gain practical skills through interactive, hands-on training.
-Personalized Support: Receive tailored guidance to meet your individual needs.
-Community Focused: Join a network of like-minded professionals committed to innovation in cybersecurity.
-Stay Ahead: Stay updated with the latest trends and techniques in offensive security.
-Discover the difference our dedicated approach to offensive security training can make for your career. Join us today and take the next step in your cybersecurity journey.
-</p>
+    <p>At TheXero, our mission is to forge enduring partnerships with our clients by providing top-tier offensive security training. We strive to understand your unique learning goals and challenges, offering tailored solutions to meet your needs.</p>
+    <p>Learn from seasoned professionals who bring real-world experience to the classroom. Our instructors are dedicated to providing personalized guidance and support throughout your learning journey.</p>
+    <p>Gain practical skills with our interactive, hands-on training approach. We ensure that you are equipped with the knowledge and experience necessary to excel in the field of cybersecurity.</p>
+    <p>Join a community of like-minded professionals committed to innovation and excellence in cybersecurity. Stay ahead of the curve with the latest trends and techniques in offensive security.</p>
+  </div>
 </div>
+
+## Why Choose TheXero?
+
+- **Industry-Leading Experts**: Benefit from the insights of top security professionals.
+- **Practical Learning**: Engage in hands-on training for real-world application.
+- **Personalized Support**: Receive customized guidance tailored to your learning objectives.
+- **Collaborative Environment**: Be part of a supportive and innovative community.
+- **Cutting-Edge Techniques**: Stay updated with the latest in offensive security.
+
+## Get Started
+
+Discover the difference our dedicated approach can make for your career. [Join us today](#) and elevate your cybersecurity skills.
