@@ -20,7 +20,6 @@ permalink: about
     <p>At the heart of our mission is a dedication to building strong, lasting relationships with our clients. As a leading training provider specializing in offensive security, we go beyond delivering courses — we are committed to understanding your unique learning goals and challenges.</p>
     <p>Our expert instructors provide personalized guidance and support throughout your learning journey. Whether you're new to cybersecurity or looking to advance your skills, we empower you with practical knowledge and hands-on experience.</p>
     <p>We aim to create a community where learning is collaborative and impactful. By choosing us, you join a network of professionals passionate about security and innovation, helping you stay ahead in today's dynamic threat landscape.</p>
-  </div>
 <p> 
 Why Choose Us for Offensive Security Training?
 Expert Instructors: Learn from industry leaders with real-world experience.
