@@ -4,7 +4,7 @@ title: "Wireless Packets - Part 1: The MAC Frame"
 date: 2024-07-13
 author: TheXero  
 comments: true  
-categories: blog  
+categories: wifi  
 description: Explore the 802.11 MAC frame structure in detail, including its header, data, and frame check sequence. Enhance your understanding of wireless packets and how they function within Wi-Fi networks. 
 excerpt: Delve into the 802.11 MAC frame header, data, and frame check sequence to gain a comprehensive understanding of wireless packet structures and their role in Wi-Fi communication. 
 tags: [training, wireless, MAC frame, 802.11, PMF]  
