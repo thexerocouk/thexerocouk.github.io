@@ -4,7 +4,7 @@ title: "Wireless Packets Part 2: Control and Data Frames"
 date: 2024-07-22 
 author: TheXero  
 comments: true  
-categories: blog  
+categories: wifi  
 description: A comprehensive guide on Control and Data Frames in Wi-Fi (802.11) networks, covering their functions, types, and roles in wireless communication. Enhance your understanding of 802.11 standards and optimize network performance. 
 excerpt: A comprehensive guide on Control and Data Frames in Wi-Fi (802.11) networks, covering their functions, types, and roles in wireless communication. Enhance your understanding of 802.11 standards and optimize network performance. 
 tags: [training, wifi]  
