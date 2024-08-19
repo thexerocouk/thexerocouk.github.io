@@ -4,7 +4,7 @@ title: Understanding Authentication in Enterprise Wi-Fi
 date: 2024-07-07  
 author: TheXero  
 comments: true  
-categories: blog  
+categories: wifi  
 description: Explore the essential components of enterprise Wi-Fi security, focusing on the Extensible Authentication Protocol (EAP), its methods, modes, and mechanisms.  
 excerpt: Learn about EAP, its methods, modes, and authentication mechanisms critical for securing enterprise Wi-Fi networks.  
 tags: [training, wifi, enterprise Wi-Fi security, EAP, authentication, network security]
