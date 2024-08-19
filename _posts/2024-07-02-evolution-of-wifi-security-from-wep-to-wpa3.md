@@ -4,7 +4,7 @@ title:  Evolution of Wi-Fi Security - From WEP to WPA3
 date: 2024-07-02
 author: TheXero
 comments: true
-categories: blog
+categories: wifi
 description: Explore the evolution of Wi-Fi security from WEP to WPA3, highlighting vulnerabilities, improvements, and the implementation of SAE.
 excerpt: Discover the progression of Wi-Fi security protocols from WEP through WPA and WPA2 to the advanced WPA3, focusing on security enhancements and challenges.
 tags: [Training, Wi-Fi Security, WEP, WPA, WPA2, WPA3, PSK, SAE, Network Security]
