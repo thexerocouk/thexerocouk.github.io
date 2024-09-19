@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "EAP-TLS: Breaking Into Secure TLS Deployments"
-date: 2024-09-20
+date: 2024-09-19
 author: TheXero
 comments: true
 categories: wifi
