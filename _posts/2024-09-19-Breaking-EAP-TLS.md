@@ -1,20 +1,33 @@
 ---
 layout: post
-title: "EAP-TLS: Breaking Into Secure TLS Deployments"
+title: title: "EAP-TLS Security: How Attackers Exploit Enterprise Wi-Fi Vulnerabilities"
 date: 2024-09-19
 author: TheXero
 comments: true
 categories: wifi
-description: "Discover how attackers can exploit vulnerabilities in EAP-TLS, one of the most secure Wi-Fi authentication protocols, and learn how to protect your network against these threats."
+description: description: "Learn how attackers exploit EAP-TLS vulnerabilities in enterprise Wi-Fi networks and how to secure your devices with best practices and real-world examples."
 excerpt: "Explore the hidden vulnerabilities of EAP-TLS and learn how attackers break into even the most secure TLS deployments. A must-read for network security professionals."
 tags: [training, wireless, security, EAP-TLS, penetration testing, Wi-Fi]
 thumbnail: /images/eap-tls.png 
 image: /images/eap-tls.png
 ---
 
+### TL;DR – EAP-TLS Wi-Fi Authentication in a Nutshell
+
+EAP-TLS ensures strong mutual authentication using digital certificates between client and server, making it one of the most secure enterprise Wi-Fi protocols.
+
+Authentication involves several steps, including certificate exchange and a 4-Way Handshake to establish a secure connection.
+
+Vulnerabilities exist, particularly in username disclosure and certificate trust issues (e.g., self-signed or overly trusted third-party certificates).
+
+Misconfigured client devices are a common attack vector—often more exploitable than the network itself.
+
+Rogue network attacks can exploit mobile devices seeking known SSIDs, enabling MitM or credential theft if identity and certificate validation are weak.
+
+
 In our last post, we discussed various authentication methods for enterprise Wi-Fi networks. Today, we’ll be focusing on **EAP-TLS (Extensible Authentication Protocol - Transport Layer Security)**, regarded as one of the most secure authentication protocols in use today. We’ll walk through its process, highlight potential vulnerabilities, and examine what attackers can exploit. But first, a quick refresher.
 
-### A Quick Recap
+### What is EAP-TLS? Quick Recap of the Protocol
 
 EAP-TLS provides robust security by enforcing **mutual authentication**—both the client and the server must validate each other’s digital certificates. This mutual validation ensures a high level of trust between the connecting device and the network.
 
@@ -39,7 +52,7 @@ EAP-TLS provides robust security by enforcing **mutual authentication**—both t
 
 Now that we’ve covered the basics, let’s dive into some of the vulnerabilities within EAP-TLS.
 
-### Potential Vulnerabilities
+### Common EAP-TLS Vulnerabilities and How to Mitigate Them
 
 #### **Username Disclosure**
 
@@ -61,7 +74,7 @@ While widely used, third-party certificates (such as those for HTTPS) only verif
 
 **Remediation**: The best practice for EAP-TLS is to use an **internal Certificate Authority (CA)**. This allows devices to trust only certificates issued by your internal CA, preventing external CAs from issuing valid certificates for your network, thereby mitigating external certificate-based attacks.
 
-### Real-World Exploitation Scenarios
+### Real-World EAP-TLS Attacks: Device Exploits and Rogue Networks
 
 While the EAP-TLS protocol is secure, attackers often target **client devices (STAs)** instead of the network infrastructure itself. Misconfigured clients or weak certificate validation practices can expose vulnerabilities.
 
