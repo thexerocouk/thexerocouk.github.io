@@ -31,7 +31,7 @@ Authentication mechanisms range from **digital certificates**, **usernames and p
 
 ---
 
-![EAP Flow Diagram](/images/eap-flow.png)
+![EAP Flow Diagram](/images/eap-peap.png)
 
 ## Introduction
 
