@@ -1,81 +1,134 @@
 ---
 layout: post  
-title: Understanding Authentication in Enterprise Wi-Fi  
-date: 2024-07-07  
+title: "Understanding Authentication in Enterprise Wi-Fi (Part 1)"  
+date: 2024-08-10  
 author: TheXero  
 comments: true  
 categories: wifi  
-description: Explore the essential components of enterprise Wi-Fi security, focusing on the Extensible Authentication Protocol (EAP), its methods, modes, and mechanisms.  
-excerpt: Learn about EAP, its methods, modes, and authentication mechanisms critical for securing enterprise Wi-Fi networks.  
-tags: [training, wifi, enterprise Wi-Fi security, EAP, authentication, network security]
-keywords: enterprise Wi-Fi security, EAP methods, EAP modes, authentication mechanisms, digital certificates, network security, wireless security, EAP-TLS, EAP-TTLS, PEAP, EAP-MD5, EAP-FAST, Wi-Fi security, multi-factor authentication
-thumbnail: /images/eap-tls-flow.png  
-image: /images/eap-tls-flow.png
+description: Dive into EAP, the authentication framework behind enterprise Wi-Fi. Explore EAP methods like TLS, PEAP, TTLS, and FAST, and learn how authentication modes and mechanisms shape wireless security.  
+excerpt: Learn how the Extensible Authentication Protocol (EAP) secures enterprise Wi-Fi through methods like EAP-TLS, PEAP, and TTLS, including how authentication works with certificates, passwords, and biometrics.  
+tags: [wifi, security, authentication, EAP, enterprise Wi-Fi, EAP-TLS, PEAP, TTLS, RADIUS]  
+keywords: [EAP Wi-Fi, enterprise Wi-Fi security, EAP-TLS explained, PEAP authentication, TTLS Wi-Fi, EAP-FAST, digital certificates Wi-Fi, authentication mechanisms Wi-Fi, RADIUS authentication, MSCHAPv2 Wi-Fi, secure Wi-Fi login, EAP modes, EAP standalone, EAP pass-through, enterprise wireless auth, 802.1X authentication, EAP vs WPA2-Enterprise, mutual authentication Wi-Fi]  
+thumbnail: /images/eap-flow.png  
+image: /images/eap-flow.png  
 ---
 
-## Part 1: Understanding Authentication in Enterprise Wi-Fi
+### TL;DR – Enterprise Wi-Fi Authentication Explained
 
-![alt eap-flow](/images/eap-tls-flow.png)
+Enterprise Wi-Fi networks rely on the Extensible Authentication Protocol (EAP) to manage secure client access. EAP acts as a flexible framework that supports various authentication methods:
 
-### Introduction
+- **EAP-TLS** provides top-tier security using mutual certificate-based authentication but requires PKI.
+- **PEAP** and **EAP-TTLS** tunnel credentials over encrypted channels for easier deployment.
+- **EAP-FAST** balances speed and security using Protected Access Credentials (PACs).
+- **EAP-MD5** is deprecated due to weak security and vulnerability to dictionary attacks.
 
-Enterprise Wi-Fi networks are critical infrastructure, necessitating robust security measures to protect sensitive data and ensure reliable connectivity. Central to enterprise Wi-Fi security is the Extensible Authentication Protocol (EAP), a versatile framework for securely authenticating users and devices. This post explores various EAP methods, authentication mechanisms, and EAP modes that form the foundation of enterprise Wi-Fi security.
+EAP operates in three modes:
+- **Standalone** (direct to auth server),
+- **Pass-through** (relayed via access point),
+- **Termination** (auth processed locally).
 
-### What is EAP?
+Authentication mechanisms range from **digital certificates**, **usernames and passwords**, to **smart cards** and **biometrics**, depending on enterprise needs. Understanding these methods helps ensure secure, scalable, and compliant enterprise wireless networks.
 
-The Extensible Authentication Protocol (EAP) is a flexible framework designed for transporting authentication protocols, commonly employed in wireless networks and point-to-point connections. EAP supports multiple authentication methods, enabling enterprises to select the most appropriate option for their security needs.
+---
 
-### Common EAP Methods
+![EAP Flow Diagram](/images/eap-flow.png)
 
-**EAP-TLS (Transport Layer Security)**  
-EAP-TLS is renowned for its security, utilising mutual authentication that requires both the client and server to present valid digital certificates. This method provides strong security through mutual authentication and encryption but is complex and costly due to the need for public key infrastructure (PKI).
+## Introduction
 
-**EAP-TTLS (Tunnelled Transport Layer Security)**  
-EAP-TTLS creates a secure tunnel for client authentication using various mechanisms, such as passwords. It offers flexibility in choosing inner authentication methods and is easier to implement than EAP-TLS, though it is slightly less secure due to the potential use of weaker inner methods.
+Enterprise Wi-Fi networks are critical infrastructure, necessitating robust security measures to protect sensitive data and ensure reliable connectivity. Central to enterprise Wi-Fi security is the **Extensible Authentication Protocol (EAP)**, a versatile framework for securely authenticating users and devices. This post explores various EAP methods, authentication mechanisms, and EAP modes that form the foundation of enterprise Wi-Fi security.
 
-**PEAP (Protected EAP)**  
-PEAP establishes a secure tunnel between the client and the authentication server, using MSCHAPv2 for client authentication within the tunnel. It is widely supported and easier to implement than EAP-TLS, but its security depends on the strength of the inner authentication protocol (e.g., MSCHAPv2).
+---
 
-**EAP-MD5**  
-EAP-MD5 employs a simple MD5 hash for client authentication. While it is easy to implement, its weak security and vulnerability to dictionary attacks make it unsuitable for enterprise use.
+## What is EAP?
 
-**EAP-FAST (Flexible Authentication via Secure Tunnelling)**  
-EAP-FAST uses a Protected Access Credential (PAC) to establish a secure tunnel for client authentication. This method offers strong security with PACs and a faster authentication process, though it is complex to manage and not as widely supported as other methods.
+The **Extensible Authentication Protocol (EAP)** is a flexible framework designed for transporting authentication protocols, commonly employed in wireless networks and point-to-point connections. EAP supports multiple authentication methods, enabling enterprises to select the most appropriate option for their security needs.
 
-### EAP Modes
+---
 
-**EAP Standalone Mode**  
-In standalone mode, the client communicates directly with the authentication server without intermediaries, suitable for small networks or environments where direct communication is feasible.
+## Common EAP Methods
 
-**EAP Pass-Through Mode**  
-In pass-through mode, the access point relays EAP messages between the client and the authentication server, commonly used in larger networks where access points do not perform authentication but pass EAP messages to a centralised server (e.g., RADIUS server).
+### EAP-TLS (Transport Layer Security)
 
-**EAP Termination Mode**  
-In termination mode, the access point or a network device terminates the EAP session and handles the authentication process locally, useful in environments requiring local authentication processing, thereby reducing the load on central servers.
+EAP-TLS is renowned for its security, utilising mutual authentication that requires both the client and server to present valid digital certificates. This method provides strong encryption and authentication but requires investment in **PKI infrastructure**.
 
-### Choosing the Right EAP Method
+### EAP-TTLS (Tunnelled Transport Layer Security)
 
-Selecting an EAP method depends on the enterprise's security requirements, infrastructure, and resources. Considerations include:
+EAP-TTLS creates a secure tunnel for client authentication using various mechanisms (e.g., usernames and passwords). It’s easier to deploy than EAP-TLS but may be less secure depending on the inner authentication method.
 
-- **Security Level:** EAP-TLS offers the highest security but requires significant investment in PKI.
-- **Ease of Deployment:** PEAP and EAP-TTLS are easier to deploy and manage, making them suitable for many enterprises.
-- **Compatibility:** Ensure that the chosen EAP method is supported by all network devices and client systems.
-- **Scalability:** Consider the scalability of the EAP method to accommodate future growth and network changes.
+### PEAP (Protected EAP)
 
-### Authentication Mechanisms in Enterprise Wi-Fi
+PEAP establishes a secure TLS tunnel and uses **MSCHAPv2** for client authentication. It is widely supported and relatively easy to implement but depends on the strength of the underlying credentials.
 
-**Digital Certificates**  
-Digital certificates are used in EAP-TLS for mutual authentication, offering high security and non-repudiation but requiring PKI infrastructure and complex management.
+### EAP-MD5
 
-**Usernames and Passwords**  
-Common in PEAP and EAP-TTLS, usernames and passwords are easy to implement but vulnerable to password attacks, offering less security compared to certificate-based methods.
+EAP-MD5 uses a challenge-response based on MD5 hashing. While simple to implement, it offers poor security and is **not recommended** for enterprise environments due to susceptibility to dictionary attacks.
 
-**Tokens and Smart Cards**  
-Used for multi-factor authentication, tokens and smart cards enhance security but involve additional hardware and management complexity.
+### EAP-FAST (Flexible Authentication via Secure Tunnelling)
 
-**Biometrics**  
-Emerging in modern authentication systems, biometrics offer high security and are difficult to replicate. However, they raise privacy concerns and require biometric hardware.
+Developed by Cisco, EAP-FAST uses a **Protected Access Credential (PAC)** to build a secure tunnel quickly. It’s efficient and secure but more complex to manage and not as widely adopted.
+
+---
+
+## EAP Modes
+
+### EAP Standalone Mode
+
+The client communicates **directly** with the authentication server. Suitable for small networks where direct communication is feasible and infrastructure is minimal.
+
+### EAP Pass-Through Mode
+
+The access point acts as a **relay**, passing EAP messages to a **centralised authentication server** (e.g., RADIUS). This is the most common mode in enterprise environments.
+
+### EAP Termination Mode
+
+The access point or controller **terminates the EAP session locally** and performs the authentication itself. Useful in distributed or edge environments where latency and scalability are concerns.
+
+---
+
+## Choosing the Right EAP Method
+
+Selecting the right EAP method depends on several factors:
+
+- **Security Level**:  
+  - EAP-TLS offers the strongest security via mutual certificate-based auth.
+- **Ease of Deployment**:  
+  - PEAP and EAP-TTLS are simpler to roll out without complex PKI.
+- **Compatibility**:  
+  - Choose methods supported across your clients, access points, and authentication servers.
+- **Scalability**:  
+  - Ensure the chosen method can scale with your organization’s growth and security posture.
+
+---
+
+## Authentication Mechanisms in Enterprise Wi-Fi
+
+### Digital Certificates
+
+Used in EAP-TLS for mutual authentication. Offer **high security and non-repudiation**, but require full PKI deployment and certificate lifecycle management.
+
+### Usernames and Passwords
+
+Used in **PEAP** and **EAP-TTLS**, easier to deploy but more vulnerable to brute force and phishing if not protected properly.
+
+### Tokens and Smart Cards
+
+Used for **multi-factor authentication**. Improve security but add operational complexity due to hardware and issuance management.
+
+### Biometrics
+
+Offer strong security with hard-to-replicate credentials. However, **privacy concerns** and **hardware requirements** may limit deployment.
+
+---
 
 ## Conclusion
 
-Understanding the various EAP methods, modes, and authentication mechanisms is crucial for securing enterprise Wi-Fi networks. By choosing the right EAP method and implementing robust authentication practices, enterprises can protect their networks from unauthorised access and ensure the integrity of their wireless communications. Stay tuned for Part 2, where we will explore common enterprise Wi-Fi attack techniques and how to defend against them.
+Understanding the various EAP methods, modes, and authentication mechanisms is essential for designing secure enterprise Wi-Fi networks. By choosing the right EAP method and implementing best-practice authentication mechanisms, organisations can:
+
+- Prevent unauthorised access  
+- Ensure data confidentiality and integrity  
+- Align with compliance standards (e.g., HIPAA, PCI-DSS)
+
+Stay tuned for **Part 2**, where we explore **common enterprise Wi-Fi attack techniques** and how to **defend against them** effectively.
+
+---
+
