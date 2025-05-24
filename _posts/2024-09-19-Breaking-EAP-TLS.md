@@ -1,6 +1,6 @@
 ---
 layout: post
-title: title: "EAP-TLS Security: How Attackers Exploit Enterprise Wi-Fi Vulnerabilities"
+title: "EAP-TLS Security: How Attackers Exploit Enterprise Wi-Fi Vulnerabilities"
 date: 2024-09-19
 author: TheXero
 comments: true
