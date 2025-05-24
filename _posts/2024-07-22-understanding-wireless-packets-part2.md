@@ -25,7 +25,7 @@ RTS/CTS frames prevent data collisions in congested networks by reserving airtim
 
 Data frames carry actual user data and may include QoS and control signals (e.g., CF-Ack, CF-Poll) to support performance-sensitive applications.
 
-In [Part 1 of our Wireless Packets series](/wifi/mac-management-frames), we introduced MAC frames and Management Frames. In this article, we'll dive deeper into Control and Data frames — essential components in 802.11 Wi-Fi networks.
+In [Part 1 of our Wireless Packets series](/wifi/wireless-packets-part1), we introduced MAC frames and Management Frames. In this article, we'll dive deeper into Control and Data frames — essential components in 802.11 Wi-Fi networks.
 
 ## What Are Control Frames?
 
