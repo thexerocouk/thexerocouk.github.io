@@ -15,7 +15,7 @@ keywords: [WiFi Attacks Specialist training, cohort recap, WiFi hacking course, 
 
 We did it!
 
-Our **first online cohort for the WiFi Attacks Specialist course** wrapped up earlier this month, and I couldn't be more thrilled with how it went. We had **12 engaged and passionate participants** who brought great energy, asked fantastic questions, and made it an incredibly rewarding experience.
+Our **first online cohort for the Wireless Mastery course** wrapped up earlier this month, and I couldn't be more thrilled with how it went. We had **12 engaged and passionate participants** who brought great energy, asked fantastic questions, and made it an incredibly rewarding experience.
 
 The live, instructor-led training was just the beginning. All participants now have **full access to the course recording and materials**, which are available anytime via our training platform:
 
