@@ -12,8 +12,6 @@ thumbnail: /images/eap-tls.png
 image: /images/eap-tls.png
 ---
 
-{% seo %}
-
 ### TL;DR – EAP-TLS Wi-Fi Authentication in a Nutshell
 
 - EAP-TLS provides strong mutual authentication using client/server digital certificates.
