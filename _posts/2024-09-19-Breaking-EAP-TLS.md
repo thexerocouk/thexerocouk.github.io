@@ -24,7 +24,7 @@ image: /images/eap-tls.png
 
 ---
 
-In our [previous post](/blog/enterprise-wifi-authentication-methods), we discussed various authentication methods for enterprise Wi-Fi networks. Today, we’re focusing on **EAP-TLS (Extensible Authentication Protocol - Transport Layer Security)**—one of the most secure 802.1X authentication methods available. We’ll break down how it works, explore key vulnerabilities, and show how attackers can exploit misconfigurations in real-world scenarios.
+In our [previous post](/wifi/enterprise-wi-fi-security), we discussed various authentication methods for enterprise Wi-Fi networks. Today, we’re focusing on **EAP-TLS (Extensible Authentication Protocol - Transport Layer Security)**—one of the most secure 802.1X authentication methods available. We’ll break down how it works, explore key vulnerabilities, and show how attackers can exploit misconfigurations in real-world scenarios.
 
 ### What is EAP-TLS? Quick Recap of the Protocol
 
