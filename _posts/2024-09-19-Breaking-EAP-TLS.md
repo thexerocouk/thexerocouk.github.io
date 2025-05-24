@@ -5,7 +5,7 @@ date: 2024-09-19
 author: TheXero
 comments: true
 categories: wifi
-description: description: "Learn how attackers exploit EAP-TLS vulnerabilities in enterprise Wi-Fi networks and how to secure your devices with best practices and real-world examples."
+description: "Learn how attackers exploit EAP-TLS vulnerabilities in enterprise Wi-Fi networks and how to secure your devices with best practices and real-world examples."
 excerpt: "Explore the hidden vulnerabilities of EAP-TLS and learn how attackers break into even the most secure TLS deployments. A must-read for network security professionals."
 tags: [training, wireless, security, EAP-TLS, penetration testing, Wi-Fi]
 thumbnail: /images/eap-tls.png 
