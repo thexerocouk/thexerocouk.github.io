@@ -130,4 +130,4 @@ Understanding these frame types is crucial for managing and securing wireless ne
 - [IEEE 802.11 Standards](https://www.ieee.org/)
 - [Wi-Fi Alliance](https://www.wi-fi.org/)
 
-Stay tuned for [Part 2: Control and Data Frames](/wifi/mac-control-data-frames), where we dive into how Wi-Fi devices coordinate communication and carry user traffic over the air.
+Stay tuned for [Part 2: Control and Data Frames](/wifi/understanding-wireless-packets-part2), where we dive into how Wi-Fi devices coordinate communication and carry user traffic over the air.
