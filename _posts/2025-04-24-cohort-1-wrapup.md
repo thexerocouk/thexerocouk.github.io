@@ -17,7 +17,7 @@ We did it!
 
 Our **first online cohort for the Wireless Mastery course** wrapped up earlier this month, and I couldn't be more thrilled with how it went. We had **12 engaged and passionate participants** who brought great energy, asked fantastic questions, and made it an incredibly rewarding experience.
 
-The live, instructor-led training was just the beginning. All participants now have **full access to the cohort recording and materials**, which are available anytime via our training platform:
+The live, instructor-led training was just the beginning. All participants now have **full access to the cohort recordings and materials**, which are available anytime via our training platform:
 
 [Access Your Materials Here](https://training.thexero.co.uk/courses/enrolled/2784520)
 
