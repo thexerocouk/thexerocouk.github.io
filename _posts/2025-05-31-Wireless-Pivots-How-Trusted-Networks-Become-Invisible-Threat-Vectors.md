@@ -171,20 +171,16 @@ And boom! You have access to Outlook web access, and you find the Outlook public
 
 ## Wireless Pivot Attack Chain Overview
 
-[Corporate Wi-Fi Device]
 
+	[Corporate Wi-Fi Device]
          ↓
-[Auto-connects to Rogue Home SSID]
-
+	[Auto-connects to Rogue Home SSID]
          ↓
-[Broadcasts mDNS/LLMNR/NetBIOS queries]
-
+	[Broadcasts mDNS/LLMNR/NetBIOS queries]
          ↓
-[Responder captures NetNTLM hash]
-
+	[Responder captures NetNTLM hash]
          ↓
-[Crack hash → Retrieve internal credentials]
-
+	[Crack hash → Retrieve internal credentials]
 
 
 ---
