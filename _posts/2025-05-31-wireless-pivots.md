@@ -32,11 +32,11 @@ But first, let do a quick recap of how WiFi actually works. Lets take a quick lo
 
 	1. What happens first, is the WiFi Client (Supplicant) sends Probe requests looking for a previously known network.
 
-	2.The AP with that network responds to the STA.
+	2. The AP with that network responds to the STA.
 
-	3.The STA then begins the authentication and get a response.
+	3. The STA then begins the authentication and get a response.
 
-	4.And lastly the association request and response are transmitted.
+	4. And lastly the association request and response are transmitted.
 
 There are a couple more steps, but hopefully you get the idea, the STA initiates everything.
 
@@ -188,23 +188,17 @@ And boom! You have access to Outlook web access, and you find the Outlook public
 ## Defensive Takeaways
 
 1. **Properly configure client Wi-Fi profiles**:
-    
     - Disable automatic reconnection.
-        
     - Use certificate pinning where possible.
 
 2. **Limit broadcast protocols**:
-    
     - Disable mDNS, LLMNR, and NetBIOS where not needed.
 
 3. **Harden mobile devices**:
-    
-    - Apply outbound firewall rules.
-        
+    - Apply outbound firewall rules.    
     - Use VPNs that auto-enable on untrusted networks.
 
 4. **Rotate passwords and use MFA**:
-    
     - Even if an NTLM hash is cracked, MFA can save you.
         
 ---
