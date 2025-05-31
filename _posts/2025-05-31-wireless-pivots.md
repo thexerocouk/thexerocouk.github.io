@@ -62,7 +62,7 @@ If successful, the STA then signs that same message with its' private key and se
 
 If both stages are verified and complete successfully, the authentication server then sends a RADIUS Access to the Authenticator (AP).
 
-The Authenticator then sends an EAP Success to the STA and completes the required 4-way handshake and the  802.1X Controlled port is opened and allows direct commutation with the backend network.
+The Authenticator then sends an EAP Success to the STA and completes the required 4-way handshake and the  802.1X Controlled port is opened and allows direct communication with the backend network.
 
 At least in the ideal world that is how it works.
 
