@@ -9,7 +9,7 @@ tags: [wifi, wireless-pivot, rogue-ap, eap-tls, mfa, netntlm, responder, hacking
 description: "Discover how attackers exploit trusted wireless networks using rogue APs, wireless pivots, and legacy protocols to turn secure EAP-TLS deployments into invisible attack surfaces."
 excerpt: "Even the most secure wireless deployments, including EAP-TLS with client certificate validation, can become entry points when endpoints are exploited in less secure environments. Here's how wireless pivots work—and why your mobile devices may be betraying you."
 image: /images/wireless-pivots-banner.png
-thumbnail: /images/wireless-pivot-banner.png
+thumbnail: /images/wireless-pivots-banner.png
 ---
 
 ## TL;DR
