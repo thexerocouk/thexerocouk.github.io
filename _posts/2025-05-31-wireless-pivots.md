@@ -22,7 +22,7 @@ Even perfectly deployed enterprise Wi-Fi networks using EAP-TLS aren't immune to
 
 This post is going to be on wireless pivots. For those not familiar with the term, a pivot is like changing your tactics, to achieve the same desired outcome.
 
-On any given day on a wireless pentest, you will likely come across a variety of different network types, a BYOD SSID that uses an iPSK (Individual Pre-Shared Key), and maybe an WPA enterprise network. Within enterprise WiFi, there are multiple authentication methods that can be supported, from those those using traditional credentials, to those using a client and server certificates. In this post, we are going to focus on the hardest of these (EAP-TLS), with the absolute PERFECT deployment that uses a trusted internal CA, client and server certificates.
+On any given day on a wireless pentest, you will likely come across a variety of different network types, a BYOD SSID that uses an iPSK (Individual Pre-Shared Key), and maybe an WPA enterprise network. Within enterprise WiFi, there are multiple authentication methods that can be supported, from those using traditional credentials, to those using a client and server certificates. In this post, we are going to focus on the hardest of these (EAP-TLS), with the absolute PERFECT deployment that uses a trusted internal CA, client and server certificates.
 
 But first, let do a quick recap of how WiFi actually works. Lets take a quick look at the different stages to connect to a network.
 
@@ -78,11 +78,11 @@ But what if I told you, there is plenty more you can do. Yes, your scope of work
 
 With all of that in mind, lets see what we can do.
 
-Every device that ever connects to that perfect EAP-TLS network, is also a target. Every device, that connects to that network, is probably also mobile, and those devices, are probably used at people homes, at coffee shops, or dare I say it, free airport WiFi.
+Every device that ever connects to that perfect EAP-TLS network, is also a target. Every device, that connects to that network, is probably also mobile, and those devices, are probably used at peoples homes, at coffee shops, or dare I say it, free airport WiFi.
 
-Once those devices connect to another network, the security boundary grows and opens a new avenue for attack. This is because, whether you know it or not, your device will send out probe requests on a regular basis. Even if you are already connected to a network, you device will likely still be seeking other networks constantly.
+Once those devices connect to another network, the security boundary grows and opens a new avenue for attack. This is because, whether you know it or not, your device will send out probe requests on a regular basis. Even if you are already connected to a network, your device will likely still be seeking other networks constantly.
 
-In a hypothetical scenario, lets say the device is connected to someone home network. They use their default ISP Thompson router, with all of the default settings, because who really changes the "secure" defaults right?
+In a hypothetical scenario, lets say the device is connected to their homes network. They use their default ISP Thomson router, with all of the default settings, because who really changes the "secure" defaults right?
 
 Lets play out this scenario!
 
@@ -90,19 +90,19 @@ Lets play out this scenario!
 
 You are sat in your clients' coffee shop at 07:30 before staff start their day. You use your monitor mode enable Alfa WiFi adapter and quickly check the available networks. One catches your eye, it has an eSSID of AxisSecure and its configured with EAP-TLS.
 
-To speed tings up, instead of potentially having to generate a second key, you decide to use Lets Encrypts' Certbot to generate us a legitimate third-party signed certificate to use with an evil twin network. Your plan, is to set up an evil twin network, of the AxisSecure using EAP-PEAP, in hopes of capturing some credentials.
+To speed things up, instead of potentially having to generate a second key, you decide to use Lets Encrypts' Certbot to generate us a legitimate third-party signed certificate to use with an evil twin network. Your plan, is to set up an evil twin network, of the AxisSecure using EAP-PEAP, in hopes of capturing some credentials.
 
 By 08:00, everything is set up and we decide to use the software rogue, to conduct our evil-twin rogue access. We load our trusted third-party Lets Encrypt certificates into the rogue command line and set up the AxisSecure evil-twin. 
 
-At approximately 80:15, we have seen 20 connection attempts. All identities we capture are "anonymous" and none of the connection attempts trusted our certificate. 
+At approximately 08:15, we have seen 20 connection attempts. All identities we capture are "anonymous" and none of the connection attempts trusted our certificate. 
 
-By 10:30, still no device trusted our certificate and we are at loss for words. Not once, ever has this happened.
+By 10:30, still no device trusted our certificate and we are at a loss for words. Not once, ever has this happened.
 
 So we shutdown our evil-twin, enable monitor mode and just watch the airways, and capture every probe request we can.
 
-We see the same thing AxisSecure, AxisBYOD and Thompson.
+We see the same thing AxisSecure, AxisBYOD and Thomson.
 
-You decide that as Thompson is generic ISP router, it is likely to also have a generic, numeric password. What if we set up that network? After all, what do we have to lose?
+You decide that as Thomson is a generic ISP router, it is likely to also have a generic, numeric password. What if we set up that network? After all, what do we have to lose?
 
 We launch rogue again, this time using WPA2 personal, and set the password to be "test test" just so that is it compliant with password requirements for a PSK.
 
@@ -111,9 +111,7 @@ Almost immediately, we get a message within rogue that says
 
 You decide to check our logs, and see that rogue sent the M1 EAPOL frame and the STA sent the M2 EAPOL frame.
 
-The STA did not use "test test" as the PSK for the Thompson SSID, but that does not matter. Lets quickly explain how the 4-way handshake works, and why, we are actually existed that the auth failed on us.
-
-Lets quickly go over how the 4-way handshake works, 
+The STA did not use "test test" as the PSK for the Thomson SSID, but that does not matter. Let's quickly explain how the 4-way handshake works, and why, we are actually excited that the auth failed on us.
 
 ---
 
@@ -125,7 +123,7 @@ The M1 EAPOL frame is sent to the STA and contains an ANonce generate from the A
 
 The STA then generates the M2 EAPOL frame and includes its own SNonce and appends the Message Integrity Code (MIC) over the contents of the M2 EAPOL frame using the Pairwise Transient Key and sends this back to the AP.
 
-For us to attack PSK, all we need is the M1 and M2 frames. In a nutshell, the M1 and M2 EAPOL frames are the STA proving to the AP is know the password. The M3 and M4 EAPOL frames are the AP proving to the STA that it knows the same password.
+For us to attack PSK, all we need is the M1 and M2 frames. In a nutshell, the M1 and M2 EAPOL frames are the STA proving to the AP that is knows the PSK. The M3 and M4 EAPOL frames are the AP proving to the STA that it knows the same password.
 
 So as the attacker, we don't care what password we set, we just want to capture the M1 and M2 frames and crack them.
 
@@ -147,7 +145,7 @@ While blocking all incoming connections is a common, and very default configurat
 
 You decide to open Wireshark on the same interface as our AP.
 
-The network is very very busy. You immediately notice a barrage of mDNS and LLMNR broadcast requests. So, the STA has a properly configured their inbound firewall, no is not blocking outbound traffic, this is how we win!
+The network is very very busy. You immediately notice a barrage of mDNS and LLMNR broadcast requests. So, the STA has a properly configured their inbound firewall, and is not blocking outbound traffic, this is how we win!
 
 If you have ever been on an internal penetration test before, you know exactly where this is going. Otherwise, come along for the ride.
 
@@ -155,9 +153,9 @@ If you have ever been on an internal penetration test before, you know exactly w
 
 So now, we can get to the good, for those unaware, lets introduce a tool of any penetration testers arsenal, Responder.
 
-The tool does exactly what the name suggests it does, it responds. Those broadcast mDNS (Multicast Domain Name System) and LLMNR (Link-Local Multicast Name Resolution) request there we are, are actually legacy or backup name resolution requests. The are looking for something. What responder does is very simple, yet very powerful, it merely responses saying "Yes I'm over here!"
+The tool does exactly what the name suggests it does, it responds. Those broadcast mDNS (Multicast Domain Name System) and LLMNR (Link-Local Multicast Name Resolution) request there we are, are actually legacy or backup name resolution requests. The are looking for something. What responder does is very simple, yet very powerful, it merely responds saying "Yes I'm over here!"
 
-When a Microsoft Windows based computer connects to a network, one of the first things it will do, is try and reconnect to any network shares or drives that it was previously. It does this by first sending out requests over modern protocols. When nothing responds to these, it then uses these legacy protocols, which typically are not verified. As the Windows operating system is very helpful, as soon as it get a response, it will automatically attempt to authenticate with the network share.
+When a Microsoft Windows based computer connects to a network, one of the first things it will do, is try and reconnect to any network shares or drives that it had previously. It does this by first sending out requests over modern protocols. When nothing responds to these, it then uses these legacy protocols, which typically are not verified. As the Windows operating system is very helpful, as soon as it get a response, it will automatically attempt to authenticate with the network share.
 
 In the backend, Windows has just attempted to authenticate with our Responder instance. Windows has sent the accounts NetNTLM authentication hash to us. 
 
