@@ -46,7 +46,7 @@ First, lets break down exactly how EAP-TLS works and why it is the most secure t
 
 ## EAP-TLS: The Security Best Practice
 
-![[/images/eap-tls-20.png]]
+![EAP-TLS Process Flow](/images/eap-tls-20.png)
 
 The first thing that happens after the 802.11 Data Link is established is the STA will request  EAPoL Start (802.1X).
 
@@ -117,7 +117,7 @@ Lets quickly go over how the 4-way handshake works,
 
 ---
 
-![[/images/4-WAY-handshake.png]]
+![The 4-Way Handshake](/images/4-WAY-handshake.png)
 
 Firstly, the 4-way handshake, is a form of mutual authentication. Both the STA and AP verify that each other knows the PSK, without ever transmitting the PSK.
 
