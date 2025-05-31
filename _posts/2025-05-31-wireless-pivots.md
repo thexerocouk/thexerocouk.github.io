@@ -24,7 +24,7 @@ This post is going to be on wireless pivots. For those not familiar with the ter
 
 On any given day on a wireless pentest, you will likely come across a variety of different network types, a BYOD SSID that uses an iPSK (Individual Pre-Shared Key), and maybe an WPA enterprise network. Within enterprise WiFi, there are multiple authentication methods that can be supported, from those using traditional credentials, to those using a client and server certificates. In this post, we are going to focus on the hardest of these (EAP-TLS), with the absolute PERFECT deployment that uses a trusted internal CA, client and server certificates.
 
-But first, let do a quick recap of how WiFi actually works. Lets take a quick look at the different stages to connect to a network.
+But first, lets do a quick recap of how WiFi actually works. Lets take a quick look at the different stages to connect to a network.
 
 ## Wi-Fi 101: A Quick Refresher
 
