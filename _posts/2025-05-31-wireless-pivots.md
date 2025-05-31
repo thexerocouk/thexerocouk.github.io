@@ -221,7 +221,7 @@ If this kind of attack flow excites you—pivoting from probe requests to passwo
 
 Whether you're new to wireless hacking or sharpening your red team skills, this course is built to turn you into a threat.
 
-Check it out here: ![https://training.thexero.co.uk/p/wifi-specialist]
+Check it out here: [https://training.thexero.co.uk/p/wifi-specialist](https://training.thexero.co.uk/p/wifi-specialist)
 
 (Bring coffee. You’ll need it.)
 
