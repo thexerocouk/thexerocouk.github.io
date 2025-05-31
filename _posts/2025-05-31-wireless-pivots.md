@@ -102,7 +102,7 @@ So we shutdown our evil-twin, enable monitor mode and just watch the airways, an
 
 We see the same thing AxisSecure, AxisBYOD and Thompson.
 
-You decide that as Thompson is generic ISP router, it is likely to also have a generic, numeric password. What if we set up that network? After all, what do we have to loose?
+You decide that as Thompson is generic ISP router, it is likely to also have a generic, numeric password. What if we set up that network? After all, what do we have to lose?
 
 We launch rogue again, this time using WPA2 personal, and set the password to be "test test" just so that is it compliant with password requirements for a PSK.
 
