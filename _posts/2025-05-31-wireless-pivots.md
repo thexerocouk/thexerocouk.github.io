@@ -211,3 +211,18 @@ So the next time someone says, “We use EAP-TLS, we’re secure,” just smile.
 
 Stay sneaky.
 
+---
+
+## Want to Master This?
+If this kind of attack flow excites you—pivoting from probe requests to password hashes—then you’ll love my Wireless Mastery Training Course.
+
+ - Hands-on labs
+ - Real-world scenarios
+
+Whether you're new to wireless hacking or sharpening your red team skills, this course is built to turn you into a threat.
+
+Check it out here: ![ttps://training.thexero.co.uk/p/wifi-specialist](https://training.thexero.co.uk/p/wifi-specialist)
+(Bring coffee. You’ll need it.)
+
+
+
