@@ -193,24 +193,20 @@ And boom! You have access to Outlook web access, and you find the Outlook public
         
     - Use certificate pinning where possible.
 
-	
 2. **Limit broadcast protocols**:
     
     - Disable mDNS, LLMNR, and NetBIOS where not needed.
 
-	
 3. **Harden mobile devices**:
     
     - Apply outbound firewall rules.
         
     - Use VPNs that auto-enable on untrusted networks.
 
-	
 4. **Rotate passwords and use MFA**:
     
     - Even if an NTLM hash is cracked, MFA can save you.
         
-
 ---
 
 ## Conclusion
