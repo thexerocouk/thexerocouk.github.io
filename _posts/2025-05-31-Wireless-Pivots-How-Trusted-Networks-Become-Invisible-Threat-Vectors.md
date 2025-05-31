@@ -28,7 +28,7 @@ But first, let do a quick recap of how WiFi actually works. Lets take a quick lo
 
 ## Wi-Fi 101: A Quick Refresher
 
-![[sta_stages.webp]]
+![[/images/sta_stages.webp]]
 
 	1. What happens first, is the WiFi Client (Supplicant) sends Probe requests looking for a previously known network.
 
@@ -46,7 +46,7 @@ First, lets break down exactly how EAP-TLS works and why it is the most secure t
 
 ## EAP-TLS: The Security Best Practice
 
-![[eap-tls-20.png]]
+![[/images/eap-tls-20.png]]
 
 The first thing that happens after the 802.11 Data Link is established is the STA will request  EAPoL Start (802.1X).
 
@@ -117,7 +117,7 @@ Lets quickly go over how the 4-way handshake works,
 
 ---
 
-![[WiFi Attack Specialist/Resources/4-WAY-handshake.png]]
+![[/images/4-WAY-handshake.png]]
 
 Firstly, the 4-way handshake, is a form of mutual authentication. Both the STA and AP verify that each other knows the PSK, without ever transmitting the PSK.
 
