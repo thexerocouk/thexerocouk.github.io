@@ -28,7 +28,7 @@ But first, let do a quick recap of how WiFi actually works. Lets take a quick lo
 
 ## Wi-Fi 101: A Quick Refresher
 
-![[/images/sta_stages.webp]]
+![WiFi Stages](/images/sta_stages.webp)
 
 	1. What happens first, is the WiFi Client (Supplicant) sends Probe requests looking for a previously known network.
 
