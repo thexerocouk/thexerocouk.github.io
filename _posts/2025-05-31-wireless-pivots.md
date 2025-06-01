@@ -70,7 +70,7 @@ After many years at this, it is quite rare to see, that both the STA and Authent
 
 During the handshake, you are only verifying the certificate. Unlike in a web browser, you are verifying that the common name included within the certificate, matches the website you are on. WiFi does not have a common name. In essence, you are only checking if the certificate is valid. You are not verifying authenticity of the service you interacting with.
 
-Now, lets pretend, that this is an ideal world. The reviewed network is actually using their on internal CA and everything is verified 100% perfectly. Most penetration testers would stop here. The scope of work, is to review this network.
+Now, lets pretend, that this is an ideal world. The reviewed network is actually using their own internal CA and everything is verified 100% perfectly. Most penetration testers would stop here. The scope of work, is to review this network.
 
 But what if I told you, there is plenty more you can do. Yes, your scope of work is to review that network, and that might be rolled out flawlessly. But, the security boundary of that network does not stop there.
 
@@ -133,7 +133,7 @@ Now thats covered, we convert the pcapng file containing a single Beacon frame f
 
 After several minutes, hashcat quits, telling us the password was "1234567890" so we had success there.
 
-We set up the exact same rogue access point again, this time with the cracked password. Now when the STA attempts to connect to us, we get no error message at all. The STA has now connected to our network, which by the way, is proving an internet connection.
+We set up the exact same rogue access point again, this time with the cracked password. Now when the STA attempts to connect to us, we get no error message at all. The STA has now connected to our network, which by the way, is providing an internet connection.
 
 As we are a little mischievous here, we also decide to port scan the connected device.
 
@@ -145,7 +145,7 @@ While blocking all incoming connections is a common, and very default configurat
 
 You decide to open Wireshark on the same interface as our AP.
 
-The network is very very busy. You immediately notice a barrage of mDNS and LLMNR broadcast requests. So, the STA has a properly configured their inbound firewall, and is not blocking outbound traffic, this is how we win!
+The network is very very busy. You immediately notice a barrage of mDNS and LLMNR broadcast requests. So, the STA has a properly configured inbound firewall, and is not blocking outbound traffic, this is how we win!
 
 If you have ever been on an internal penetration test before, you know exactly where this is going. Otherwise, come along for the ride.
 
@@ -153,7 +153,7 @@ If you have ever been on an internal penetration test before, you know exactly w
 
 So now, we can get to the good, for those unaware, lets introduce a tool of any penetration testers arsenal, Responder.
 
-The tool does exactly what the name suggests it does, it responds. Those broadcast mDNS (Multicast Domain Name System) and LLMNR (Link-Local Multicast Name Resolution) request there we are, are actually legacy or backup name resolution requests. The are looking for something. What responder does is very simple, yet very powerful, it merely responds saying "Yes I'm over here!"
+The tool does exactly what the name suggests it does, it responds. Those broadcast mDNS (Multicast Domain Name System) and LLMNR (Link-Local Multicast Name Resolution) requests, are actually legacy or backup name resolution methods. The are looking for something. What responder does is very simple, yet very powerful, it merely responds saying "Yes I'm over here!"
 
 When a Microsoft Windows based computer connects to a network, one of the first things it will do, is try and reconnect to any network shares or drives that it had previously. It does this by first sending out requests over modern protocols. When nothing responds to these, it then uses these legacy protocols, which typically are not verified. As the Windows operating system is very helpful, as soon as it get a response, it will automatically attempt to authenticate with the network share.
 
