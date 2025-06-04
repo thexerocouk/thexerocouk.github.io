@@ -9,9 +9,9 @@ section_id: blog
     <span class='date'>{{ page.date | date: "%d" }}</span>
   </div>
   <div class='info'>
-    <h3>
+    <h1>
       <a href='{{page.url}}'>{{ page.title }}</a>
-    </h3>
+    </h1>
     <p>Author: <span class='author'><a href='/author/{{ page.author | downcase }}'>{{ page.author }}</a> | Category: <a href='/{{ page.categories }}'>{{ page.categories }}</a></span></p>
 
   </div>
@@ -22,7 +22,7 @@ section_id: blog
     {% include share.html %}
 
     <br /> <br /> <br />
-<h4>You May Also Enjoy</h4>
+<h2>You May Also Enjoy</h2>
 
 {% assign maxRelated = 2 %}
 {% assign minCommonTags =  2 %}
