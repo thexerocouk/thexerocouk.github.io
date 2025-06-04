@@ -31,13 +31,10 @@ But first, lets do a quick recap of how WiFi actually works. Lets take a quick l
 
 ![WiFi Stages](/images/sta_stages.webp)
 
-	1. What happens first, is the WiFi Client (Supplicant) sends Probe requests looking for a previously known network.
-
-	2. The AP with that network responds to the STA.
-
-	3. The STA then begins the authentication and get a response.
-
-	4. And lastly the association request and response are transmitted.
+1. What happens first, is the WiFi Client (Supplicant) sends Probe requests looking for a previously known network.
+2. The AP with that network responds to the STA.
+3. The STA then begins the authentication and get a response.
+4. And lastly the association request and response are transmitted.
 
 There are a couple more steps, but hopefully you get the idea, the STA initiates everything.
 
