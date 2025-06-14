@@ -15,7 +15,7 @@ thumbnail: /images/ssid_hidden.webp
 
 ## TL;DR
 
-Hidden SSIDs don’t provide real security—they only hide your network name from the casual observer. In this post, we explore how attackers can reveal a hidden SSID by monitoring probe responses and forge beacon frames using Scapy to crack WPA2 passwords using tools like `hcxpcapngtool` and Hashcat. If you’re relying on “security by obscurity,” it’s time to rethink your wireless defenses.
+Hidden SSIDs don’t provide real security—they only hide your network name from the casual observer. In this post, we explore how attackers can reveal a hidden SSID by monitoring probe responses and forge beacon frames using Scapy to crack WPA2 passwords using the password cracking tool Hashcat. If you’re relying on “security by obscurity,” it’s time to rethink your wireless defenses.
 
 ---
 
@@ -41,12 +41,12 @@ To get around, this STA must be configured to ask for the specific network it is
 ![Probe with SSID](/images/probe_ssid.webp)
 
 
-After receiving this valid response frame, the device then continues through the WiFi states and exchanges the authentication frames, and following with the association frames, again while having to disclose the SSID it is attempting to associated with.
+After receiving this valid response frame, the device then continues through the WiFi states and exchanges the authentication frames, and following with the association frames, again while having to disclose the SSID it is attempting to associate with.
 
 ![Association with SSID](/images/association_ssid.webp)
 
 
-And so, despite some might believe using a hidden or non-broadcasting SSID is a security feature, really not. It is more security by obscurity and hassle than anything else, as the world is more security and privacy conscience than ever before, the non-broadcasting network name is still leaked during various stages.
+And so, despite some might believe using a hidden or non-broadcasting SSID is a security feature, its really not. It is more security by obscurity and hassle than anything else, as the world is more security and privacy conscience than ever before, the non-broadcasting network name is still leaked during various stages.
 
 But I hear you say, "what about during the 4-way handshake, the SSID is the salt. Without it, you cannot crack the password." To that, I would say, you are 100% correct. The way the PSK is generated is with both the password as well as the SSID. Lets break this down demonstrate this in human readable python code.
 
@@ -70,7 +70,7 @@ print(PMK)
 
 More information on this exact process can be found in the RFC over at https://www.rfc-editor.org/rfc/rfc8018.txt 
 
-So yes, in order to crack the password, you need the true SSID for network. 
+So yes, in order to crack the password, you need the true SSID for the network. 
 
 Now, imagine this scenario, you are on a wireless pentest, you got the 4-way handshake, all is good, and you export the files. You go back to your office to put the hash onto your custom built escobar password cracking device. 
 
@@ -108,7 +108,7 @@ sendp(frame, iface='wlan0', count=10)
 print("Sent Beacon.")
 ```
 
-With Wireshark open listening capture the forged Beacon frame as shown below:
+With Wireshark open and listening capture the forged Beacon frame as shown below:
 ![Forged Beacon Frame](/images/forged_beacon.webp)
 
 Now all you need to do in merge the forged beacon frame into the existing pcapng file and convert the hash to hashcat using hcxpcapngtool. And finally, its now time to crack the hash using hashcat
@@ -124,6 +124,6 @@ Toby
 
 ### Ready to Level Up Your Wireless Hacking Skills?
 
-If you found this post valuable and want to dive deeper into real-world WiFi attack techniques, rogue AP setups, handshake harvesting, and advanced cracking, check out my **WiFi Mastery** course.
+If you found this post valuable and want to dive deeper into real-world WiFi attack techniques, rogue AP setups, handshake harvesting, and advanced cracking, check out my **Wireless Mastery** course.
 
 Enrollment is open now at [https://training.thexero.co.uk/p/wifi-specialist](https://training.thexero.co.uk/p/wifi-specialist) and take your wireless skills to the next level.
