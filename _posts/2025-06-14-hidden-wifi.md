@@ -48,7 +48,7 @@ After receiving this valid response frame, the device then continues through the
 
 And so, despite some might believe using a hidden or non-broadcasting SSID is a security feature, its really not. It is more security by obscurity and hassle than anything else, as the world is more security and privacy conscience than ever before, the non-broadcasting network name is still leaked during various stages.
 
-But I hear you say, "what about during the 4-way handshake, the SSID is the salt. Without it, you cannot crack the password." To that, I would say, you are 100% correct. The way the PSK is generated is with both the password as well as the SSID. Lets break this down demonstrate this in human readable python code.
+But I hear you say, "what about during the 4-way handshake, the SSID is the salt. Without it, you cannot crack the password." To that, I would say, you are 100% correct. The way the PSK is generated is with both the password as well as the SSID. Lets break this down and demonstrate this in human readable python code.
 
 
 ```
@@ -68,7 +68,7 @@ PMK=PBKDF2(PASSWORD, ESSID, 4096).read(32).hex()
 print(PMK)
 ```
 
-More information on this exact process can be found in the RFC over at https://www.rfc-editor.org/rfc/rfc8018.txt 
+More information on this exact process can be found in the RFC over at [https://www.rfc-editor.org/rfc/rfc8018.txt](https://www.rfc-editor.org/rfc/rfc8018.txt).
 
 So yes, in order to crack the password, you need the true SSID for the network. 
 
