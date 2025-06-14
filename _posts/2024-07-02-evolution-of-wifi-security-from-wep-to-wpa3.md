@@ -1,53 +1,127 @@
 ---
-layout: post
-title:  Evolution of Wi-Fi Security - From WEP to WPA3
-date: 2024-07-02
-author: TheXero
-comments: true
-categories: blog
-description: Explore the evolution of Wi-Fi security from WEP to WPA3, highlighting vulnerabilities, improvements, and the implementation of SAE.
-excerpt: Discover the progression of Wi-Fi security protocols from WEP through WPA and WPA2 to the advanced WPA3, focusing on security enhancements and challenges.
-tags: [Training, Wi-Fi Security, WEP, WPA, WPA2, WPA3, PSK, SAE, Network Security]
-thumbnail: /images/wep-to-wpa3.png
-image: /images/wep-to-wpa3.png
+layout: post  
+title: "The Evolution of Wi-Fi Security: From WEP to WPA3"  
+date: 2024-09-01  
+author: TheXero  
+comments: true  
+categories: wifi  
+description: Explore the evolution of Wi-Fi security from the flawed WEP protocol to robust WPA3. Learn the strengths and weaknesses of each security standard and best practices for modern networks.  
+excerpt: From WEP to WPA3, this post dives into how Wi-Fi security has evolved to counter new threats, explaining key protocols and their practical implications.  
+tags: [wireless, Wi-Fi security, WEP, WPA2, WPA3, SAE, encryption]  
+thumbnail: /images/evolution-wifi-security.png  
+image: /images/evolution-wifi-security.png  
 ---
 
-### Evolution of Wi-Fi Security - From WEP to WPA3
+> ### TL;DR – Evolution of Wi-Fi Security:
+>
+> 1. **WEP** was the first Wi-Fi security protocol but was quickly broken due to weak encryption and IV reuse.  
+> 2. **WPA** introduced TKIP and better key management but still relied on the insecure RC4 cipher.  
+> 3. **WPA2** replaced TKIP with AES (CCMP), vastly improving encryption strength—though WPA2-PSK remained vulnerable to offline attacks.  
+> 4. **WPA3** uses **SAE** for stronger, password-authenticated key exchange with forward secrecy and dictionary attack resistance.  
+> 5. **Transition mode** helps with WPA3 adoption but introduces downgrade risks—separate SSIDs or disabling it is recommended once all clients support WPA3.
 
-#### Pre-WPA: Addressing Vulnerabilities
+---
 
-The origins of Wi-Fi Protected Access (WPA) trace back to the vulnerabilities of its predecessor, Wired Equivalent Privacy (WEP). Introduced over two decades ago, WEP suffered from critical weaknesses, notably susceptibility to replay attacks due to flaws in the RC4 cipher. These vulnerabilities allowed attackers to intercept and decrypt data by replaying captured packets, exposing encryption keys.
+Wi-Fi has become an integral part of modern networking, but its security has evolved significantly over time. From the flawed early implementations of WEP to the robust protections offered by WPA3, this article outlines the journey of Wi-Fi security protocols and highlights key improvements at each stage.
 
-#### Introducing WPA and TKIP
+## WEP – Wired Equivalent Privacy
 
-To mitigate these security issues, WPA was developed as an interim solution. It introduced the Temporal Key Integrity Protocol (TKIP), which, while based on RC4 for backward compatibility, implemented mechanisms to counter replay attacks and enhance data integrity. Despite these improvements, TKIP's reliance on RC4 eventually led to its deprecation due to emerging vulnerabilities.
+Introduced in 1997 with the original IEEE 802.11 standard, WEP was designed to provide a level of privacy comparable to wired networks. It used the RC4 stream cipher and a 40-bit or 104-bit key along with a 24-bit Initialization Vector (IV).
 
-#### WPA Version 2: Transition to AES
+### Why WEP Failed:
 
-WPA evolved into WPA2, a significant upgrade that replaced TKIP with the Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP AES). This transition addressed the shortcomings of TKIP by leveraging the robust Advanced Encryption Standard (AES), known for its stronger encryption and resistance to attacks.
+- IVs were reused due to their small size (24 bits), enabling key recovery attacks.
+- Weak key scheduling in RC4 allowed for statistical attacks (e.g., Fluhrer, Mantin, and Shamir attack).
+- Authentication could be spoofed.
+- Cracking tools like Aircrack-ng made WEP trivial to break within minutes.
 
-#### Security Challenges: The Role of Pre-Shared Keys (PSK)
+WEP was officially deprecated by the Wi-Fi Alliance in 2004 but remains a cautionary example of poor cryptographic design.
 
-Both original WPA and WPA2, particularly in personal mode, employ Pre-Shared Keys (PSKs) for authentication. Despite advancements in encryption standards, vulnerabilities in this authentication method remain a significant concern, highlighting the need for secure deployment practices and regular updates.
+## WPA – Wi-Fi Protected Access
 
-### WPA Version 3: Implementing SAE
+As a stopgap measure, WPA was introduced in 2003 before the full ratification of WPA2.
 
-WPA3 introduces the Simultaneous Authentication of Equals (SAE) handshake protocol, replacing the PSK used in WPA and WPA2. SAE strengthens the authentication process by effectively resisting password guessing attacks. It utilizes a variant of the Diffie-Hellman key exchange protocol combined with a commitment scheme, ensuring secure mutual authentication between the AP and the STA without exposing their credentials.
+### Key Features:
 
-#### Key Benefits of SAE in WPA3:
-- **Resistance to Dictionary Attacks:** SAE mitigates offline dictionary attacks, significantly increasing the difficulty for attackers to guess passwords.
-- **Forward Secrecy:** Provides forward secrecy by generating unique session keys for each connection, minimizing the impact of a compromised key.
-- **Improved Robustness:** Offers enhanced resistance to attacks compared to PSK, thereby elevating overall network security.
+- Still used RC4 but introduced TKIP (Temporal Key Integrity Protocol).
+- Per-packet key mixing and integrity checks (MIC – Message Integrity Code).
+- Replay protection and extended IVs.
 
-WPA3's adoption of SAE represents a substantial advancement in securing Wi-Fi networks, offering robust protections against various cyber threats.
+### Shortcomings:
 
-### The Security Vulnerability with WPA3 Transition Mode
+- RC4 was still used and remained a security concern.
+- Designed to be firmware-upgradable, so it was constrained by WEP-era hardware limitations.
+- TKIP itself had vulnerabilities, including weaknesses in the MIC (Michael) algorithm.
 
-With any upgrade, there comes a transitional phase, and WPA3, along with the SAE handshake, is no exception. WPA3 introduced a transition mode to facilitate migration from WPA2 to WPA3 while maintaining compatibility with legacy devices. This transition mode allows the use of a PSK alongside WPA3 networks, enabling interoperability. However, this backward compatibility reintroduces vulnerabilities associated with PSK, similar to those affecting WPA and WPA2.
+WPA was a necessary transition but not a long-term solution.
 
-#### Vulnerability Details:
-- **Interoperability Challenges:** Networks in WPA3 transition mode must support both WPA2 and WPA3 simultaneously, potentially adding complexity and attack surface.
-- **Attack Surface:** Attackers can exploit the coexistence of WPA2 and WPA3 networks to downgrade devices to WPA2, potentially compromising security by attempting to capture the PSK.
-- **Mitigation:** To mitigate this risk, network administrators should consider deploying separate SSIDs for WPA2 and WPA3 networks. This separation ensures that devices connect only to their intended network type, reducing the risk of downgrade attacks. Additionally, maintaining up-to-date firmware and software on all devices is crucial to promptly address security vulnerabilities.
+## WPA2 – Robust Security Network (RSN)
 
-While WPA3 offers significant security enhancements, careful configuration and management are crucial to mitigate risks associated with the transition mode effectively.
+Ratified in 2004, WPA2 became mandatory for Wi-Fi Certified devices in 2006.
+
+### Key Improvements:
+
+- Introduced CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol), based on AES.
+- Stronger encryption and integrity checking.
+- Eliminated RC4 and replaced TKIP (although WPA2-TKIP remained for backward compatibility).
+- Two authentication options:
+  - **WPA2-PSK**: Pre-Shared Key, suitable for home use.
+  - **WPA2-Enterprise**: Uses 802.1X and RADIUS servers for dynamic key exchange.
+
+### Issues:
+
+- WPA2-PSK still allowed offline dictionary attacks if the passphrase was weak.
+- No forward secrecy—compromising the PSK or PMK allowed decryption of all previous traffic.
+- Vulnerable to KRACK (Key Reinstallation Attack) due to flaws in the 4-way handshake.
+
+Despite these issues, WPA2 remains widely used and reasonably secure when implemented properly.
+
+## WPA3 – The Future of Wi-Fi Security
+
+Released in 2018, WPA3 addresses many of WPA2’s shortcomings and reflects a modern security mindset.
+
+### Enhancements:
+
+- Replaces the PSK model with **SAE (Simultaneous Authentication of Equals)** for WPA3-Personal.
+  - Password-authenticated key exchange (PAKE).
+  - Resists offline dictionary attacks.
+  - Provides forward secrecy.
+- **WPA3-Enterprise** supports 192-bit security mode for high-security environments.
+- Improves protection for weak passwords.
+- Mandates Protected Management Frames (PMF), previously optional under WPA2.
+
+### WPA3 Transition Mode:
+
+To ease migration, WPA3 allows for a **transition mode** where WPA2 and WPA3 coexist on the same SSID. However, this introduces downgrade attack risks:
+
+> **Best practice**: Use separate SSIDs for WPA2 and WPA3 if transition mode cannot be disabled.
+
+## Summary
+
+| Protocol | Cipher | Auth Method | Vulnerabilities |
+|---------|--------|--------------|------------------|
+| WEP     | RC4    | Shared/Open | Weak IVs, key recovery |
+| WPA     | RC4+TKIP | PSK/802.1X | Weak MIC, legacy issues |
+| WPA2    | AES-CCMP | PSK/802.1X | KRACK, offline attacks |
+| WPA3    | AES-CCMP | SAE/802.1X | Downgrade risk (transition mode) |
+
+---
+
+## Recommendations
+
+- **Avoid WEP and WPA** entirely.
+- **Use WPA2-Enterprise** or **WPA3** wherever possible.
+- Ensure **strong passphrases** and **enable PMF**.
+- For WPA3 adoption, avoid transition mode when feasible or monitor for downgrade attacks.
+- Periodically audit your wireless infrastructure for legacy clients and protocols.
+
+---
+
+## Further Reading
+
+- [Wi-Fi Alliance: WPA3 Overview](https://www.wi-fi.org/discover-wi-fi/security)
+- [IEEE 802.11 Standards](https://standards.ieee.org/ieee/802.11/)
+
+---
+
+Stay secure, stay updated — as wireless technology evolves, so must our defenses.

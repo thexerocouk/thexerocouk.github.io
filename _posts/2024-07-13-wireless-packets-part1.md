@@ -1,15 +1,38 @@
 ---
 layout: post  
-title: "Wireless Packets - Part 1: The MAC Frame"  
-date: 2024-07-13
+title: "802.11 Wi-Fi Explained: MAC Frame Structure (Wireless Packets Part 1)"  
+date: 2024-07-13  
 author: TheXero  
 comments: true  
-categories: blog  
-description: Explore the 802.11 MAC frame structure in detail, including its header, data, and frame check sequence. Enhance your understanding of wireless packets and how they function within Wi-Fi networks. 
-excerpt: Delve into the 802.11 MAC frame header, data, and frame check sequence to gain a comprehensive understanding of wireless packet structures and their role in Wi-Fi communication. 
-tags: [training, wireless, MAC frame, 802.11, PMF]  
+categories: wifi  
+description: Learn the 802.11 MAC frame format including headers, control fields, addressing, and sequence numbers. Understand how Wi-Fi frames are built and how they operate across networks.  
+excerpt: Break down the 802.11 MAC frame into its core fields — including frame control, addresses, and FCS — to learn how Wi-Fi packets are transmitted and managed at the MAC layer.  
+tags: [training, wireless, MAC frame, 802.11, PMF, Wi-Fi packet structure]  
+keywords: [802.11 MAC frame, wireless frame header, Wi-Fi packet structure, MAC address fields, protected management frames, frame control 802.11, Wi-Fi data integrity, sequence control Wi-Fi, 802.11 management frames, PMF security, wireless fragmentation, frame check sequence, DS flag Wi-Fi, MAC frame diagram, duration ID Wi-Fi, MAC layer Wi-Fi, 802.11 protocol basics, Wi-Fi debugging, wireless network design]  
 thumbnail: /images/mac-frame.png  
-image: /images/mac-frame.png
+image: /images/mac-frame.png  
+---
+
+### TL;DR – 802.11 MAC Frame Explained
+
+The MAC frame is the foundation of Wi-Fi communication, defining how data is transmitted across the wireless medium.
+
+The **Frame Control** field defines type (Management, Control, Data, Extension), subtype, and critical flags like encryption (PMF), power-saving mode, and retries.
+
+The **Duration/ID** field reserves airtime or identifies clients for power-saving operations.
+
+Up to four 6-byte MAC addresses (DA, SA, TA, RA) appear depending on direction flags (To DS / From DS), directing packet flow across wired and wireless systems.
+
+**Sequence Control** ensures delivery integrity using sequence and fragment numbers.
+
+The **Data** payload varies based on encryption (WEP, TKIP, CCMP), supporting lengths up to 2324 bytes.
+
+The **Frame Check Sequence** validates data integrity using CRC.
+
+Management frames (e.g., beacon, probe, authentication, association) govern connection setup and maintenance. **Protected Management Frames (PMF)** enhance security against spoofing and interception.
+
+Understanding MAC frame structure is essential for Wi-Fi troubleshooting, optimization, and secure network design.
+
 ---
 
 ![802.11 MAC Frame](/images/mac-frame.png)
@@ -80,6 +103,8 @@ This variable-length field supports payloads up to 2324 bytes, depending on the 
 
 This field contains the frame’s CRC (Cyclic Redundancy Check) value, ensuring data integrity during transmission.
 
+---
+
 ### Frame Types Explained
 
 #### Management Frames
@@ -94,17 +119,15 @@ This field contains the frame’s CRC (Cyclic Redundancy Check) value, ensuring 
 - **Deauthentication Frames**: Sent by an AP to terminate a client's authenticated session, prompting the client to re-authenticate to continue communication.
 - **Disassociation Frames**: Sent by a client to inform an AP of its desire to disconnect from the network.
 
-With the advent of [Protected Management Frames](Understanding-PMF) [(PMF)](Understanding-PMF), management frames have become more secure. PMF enhances the security of management frames, protecting them from forgery and eavesdropping attacks. This feature is crucial for maintaining the integrity and confidentiality of network operations, especially in enterprise environments where the risk of malicious activity is higher.
+With the advent of [Protected Management Frames](Understanding-PMF), management frames have become more secure. PMF enhances the security of management frames, protecting them from forgery and eavesdropping attacks. This feature is crucial for maintaining the integrity and confidentiality of network operations, especially in enterprise environments where the risk of malicious activity is higher.
 
 Understanding these frame types is crucial for managing and securing wireless networks effectively, as each frame serves a distinct role in network operations and data transmission.
 
 ---
 
-### Further Reading and Resources
-
-For those interested in diving deeper into the technical intricacies of the 802.11 MAC frame and exploring advanced Wi-Fi security measures, consider these resources:
+### 📚 Further Reading and Resources
 
 - [IEEE 802.11 Standards](https://www.ieee.org/)
 - [Wi-Fi Alliance](https://www.wi-fi.org/)
 
-Stay tuned for Part 2 of this series, where we will explore the nuances of data frames and control frames in greater detail.
+Stay tuned for [Part 2: Control and Data Frames](/wifi/understanding-wireless-packets-part2), where we dive into how Wi-Fi devices coordinate communication and carry user traffic over the air.

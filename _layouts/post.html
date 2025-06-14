@@ -9,9 +9,9 @@ section_id: blog
     <span class='date'>{{ page.date | date: "%d" }}</span>
   </div>
   <div class='info'>
-    <h3>
+    <h1>
       <a href='{{page.url}}'>{{ page.title }}</a>
-    </h3>
+    </h1>
     <p>Author: <span class='author'><a href='/author/{{ page.author | downcase }}'>{{ page.author }}</a> | Category: <a href='/{{ page.categories }}'>{{ page.categories }}</a></span></p>
 
   </div>
@@ -22,7 +22,7 @@ section_id: blog
     {% include share.html %}
 
     <br /> <br /> <br />
-<h4>You May Also Enjoy</h4>
+<h2>You May Also Enjoy</h2>
 
 {% assign maxRelated = 2 %}
 {% assign minCommonTags =  2 %}
@@ -46,12 +46,12 @@ section_id: blog
       {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
       {% if maxRelatedCounter < maxRelated %}
        <div>
-       <h5><a class="alignleft"  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+       <h3><a class="alignleft"  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
        </div>
        {% endif %}
       {% if maxRelatedCounter >= maxRelated %}
         <div>
-       <h5><a class="alignright"  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+       <h3><a class="alignright"  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
        </div>
         {% break %}
       {% endif %}
@@ -65,16 +65,7 @@ section_id: blog
 <br />
 <div id="disqus_thread"></div>
 <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
+    (function() {
     var d = document, s = d.createElement('script');
     s.src = 'https://thexero-1.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());

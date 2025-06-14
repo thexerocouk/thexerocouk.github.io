@@ -4,7 +4,7 @@ title: Understanding Protected Management Frames - Part 2
 date: 2024-06-28
 author: TheXero
 comments: true
-categories: blog
+categories: wifi
 description: Learn about the limitations of Protected Management Frames (PMF) in Wi-Fi security, including gaps that can be exploited through passive listening, evil twin APs, and Wi-Fi jamming.
 excerpt: Learn about the limitations of Protected Management Frames (PMF) in Wi-Fi security, including gaps that can be exploited through passive listening, evil twin APs, and Wi-Fi jamming.
 tags: [wifi, training, PMF, Wi-Fi security, vulnerabilities]
