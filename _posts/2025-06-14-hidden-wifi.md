@@ -38,7 +38,7 @@ What ends up happening, is the device will send a probe request with a missing S
 
 To get around, this STA must be configured to ask for the specific network it is looking for, only then will the AP send a response containing the SSID.
 
-![[Probe with SSID](/images/probe_ssid.webp)
+![Probe with SSID](/images/probe_ssid.webp)
 
 
 After receiving this valid response frame, the device then continues through the WiFi states and exchanges the authentication frames, and following with the association frames, again while having to disclose the SSID it is attempting to associated with.
