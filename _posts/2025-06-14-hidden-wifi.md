@@ -25,7 +25,7 @@ Now, lets clear up a few bits first, a hidden SSID is not a recommended security
 
 A standard WiFi network presents itself by sending out what is known as a Beacon frame.  This beacon frame is used to actively broadcast itself as being available to connect to. A hidden, or non-broadcasting SSID on the other hand, still sends the same beacon frames, but with an empty SSID field.
 
-![[/images/ssid_hidden.webp]]
+![Hidden SSID](/images/ssid_hidden.webp)
 
 Now, the standard device might have trouble connecting to a hidden network for one of two reasons.
 1. The modern day default, is that STA devices can be configured to search for networks, but typically do not reveal what network they are searching for. Instead, they rely on the response frame containing a known network.
@@ -33,17 +33,17 @@ Now, the standard device might have trouble connecting to a hidden network for o
 
 What ends up happening, is the device will send a probe request with a missing SSID, and the hidden network, will just ignore it. It will not respond to the request.
 
-![[/images/probe_hidden.webp]]
+![Hidden Probe](/images/probe_hidden.webp)
 
 
 To get around, this STA must be configured to ask for the specific network it is looking for, only then will the AP send a response containing the SSID.
 
-![[/images/probe_ssid.webp]]
+![[Probe with SSID](/images/probe_ssid.webp)
 
 
 After receiving this valid response frame, the device then continues through the WiFi states and exchanges the authentication frames, and following with the association frames, again while having to disclose the SSID it is attempting to associated with.
 
-![[/images/association_ssid.webp]]
+![Association with SSID](/images/association_ssid.webp)
 
 
 And so, despite some might believe using a hidden or non-broadcasting SSID is a security feature, really not. It is more security by obscurity and hassle than anything else, as the world is more security and privacy conscience than ever before, the non-broadcasting network name is still leaked during various stages.
@@ -109,7 +109,7 @@ print("Sent Beacon.")
 ```
 
 With Wireshark open listening capture the forged Beacon frame as shown below:
-![[/images/forged_beacon.webp]]
+![Forged Beacon Frame](/images/forged_beacon.webp)
 
 Now all you need to do in merge the forged beacon frame into the existing pcapng file and convert the hash to hashcat using hcxpcapngtool. And finally, its now time to crack the hash using hashcat
 ```# hashcat -m 22000 forged.22000 /usr/share/wordlists/rockyou.txt --quiet
