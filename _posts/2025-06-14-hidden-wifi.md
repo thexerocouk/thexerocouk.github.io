@@ -19,11 +19,11 @@ Hidden SSIDs don’t provide real security—they only hide your network name fr
 
 ---
 
-I have received alot of queries recently, around hidden SSIDs, specifically if there is any security implications of it. After all, if no one can see my network, then no body can possibly target it.
+I have received a lot of queries recently, around hidden SSIDs, specifically if there is any security implications of it. After all, if no one can see my network, then nobody can possibly target it.
 
 Now, lets clear up a few bits first, a hidden SSID is not a recommended security practice. A hidden SSID is actually known as a non-broadcasting SSID, and provides a false sense of security. Lets explore why this is the case.
 
-A standard WiFi network presents itself by sending out what is known as a Beacon frame.  This beacon frame is used to actively broadcast itself as being available to connect to. A hidden, or non-broadcasting SSID on the other hand, still sends the same beacon frames, but with an empty SSID field.
+A standard WiFi network presents itself by sending out what is known as a Beacon frame. This beacon frame is used to actively broadcast itself as being available to connect to. A hidden, or non-broadcasting SSID on the other hand, still sends the same beacon frames, but with an empty SSID field.
 
 ![Hidden SSID](/images/ssid_hidden.webp)
 
@@ -46,7 +46,7 @@ After receiving this valid response frame, the device then continues through the
 ![Association with SSID](/images/association_ssid.webp)
 
 
-And so, despite some might believe using a hidden or non-broadcasting SSID is a security feature, its really not. It is more security by obscurity and hassle than anything else, as the world is more security and privacy conscience than ever before, the non-broadcasting network name is still leaked during various stages.
+And so, despite some might believe using a hidden or non-broadcasting SSID is a security feature, its really not. It is more security by obscurity and hassle than anything else, as the world is more security and privacy conscious than ever before, the non-broadcasting network name is still leaked during various stages.
 
 But I hear you say, "what about during the 4-way handshake, the SSID is the salt. Without it, you cannot crack the password." To that, I would say, you are 100% correct. The way the PSK is generated is with both the password as well as the SSID. Lets break this down and demonstrate this in human readable python code.
 
@@ -111,7 +111,7 @@ print("Sent Beacon.")
 With Wireshark open and listening capture the forged Beacon frame as shown below:
 ![Forged Beacon Frame](/images/forged_beacon.webp)
 
-Now all you need to do in merge the forged beacon frame into the existing pcapng file and convert the hash to hashcat using hcxpcapngtool. And finally, its now time to crack the hash using hashcat
+Now all you need to do is merge the forged beacon frame into the existing pcapng file and convert the hash to hashcat using hcxpcapngtool. And finally, its now time to crack the hash using hashcat
 ```# hashcat -m 22000 forged.22000 /usr/share/wordlists/rockyou.txt --quiet
 8761551efb7b088761cdcf31de358919:50d4f7ffefd8:0025d38b6d09:WPA2:princess
 ```
