@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hacking Hidden WiFi Networks"
-date: 2025-06-20
+date: 2025-06-14
 author: TheXero
 comments: true
 categories: wifi
