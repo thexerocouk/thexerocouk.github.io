@@ -14,4 +14,4 @@ After much anticipation, we are very excited to announce the launch of our WiFi 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eal4jF0DqsY?si=vxjgMH-S377_qxUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For a limited time, our world-class training is available for an initial promotion. The full syllabus is available online at <a href="https://training.thexero.co.uk/p/wifi-specialist" target="_blank" rel="noopener noreferrer">https://training.thexero.co.uk/p/wifi-specialist</a>. Hope to see you there!
+For a limited time, our world-class training is available for an initial promotion. The full syllabus is available online at [https://training.thexero.co.uk/p/wifi-specialist](https://training.thexero.co.uk/p/wireless-mastery). Hope to see you there!
