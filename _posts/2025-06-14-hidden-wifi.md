@@ -126,4 +126,4 @@ Toby
 
 If you found this post valuable and want to dive deeper into real-world WiFi attack techniques, rogue AP setups, handshake harvesting, and advanced cracking, check out my **Wireless Mastery** course.
 
-Enrollment is open now at [https://training.thexero.co.uk/p/wifi-specialist](https://training.thexero.co.uk/p/wifi-specialist) and take your wireless skills to the next level.
+Enrollment is open now at [https://training.thexero.co.uk/p/wireless-mastery](https://training.thexero.co.uk/p/wireless-mastery) and take your wireless skills to the next level.
