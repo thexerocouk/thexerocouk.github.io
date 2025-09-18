@@ -11,6 +11,63 @@
     font-weight: 400
 }
 
+.breadcrumbs>*,.sub-nav dt {
+    text-transform: uppercase
+}
+
+.breadcrumbs,.button-bar .button-group div,.clearing-container,.flex-video,.inline-list,.orbit-container,.postfix,.prefix,.sub-nav,.top-bar,.top-bar-section .dropdown,div.switch {
+    overflow: hidden
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    text-rendering: optimizeLegibility
+}
+
+.accordion:after,.button-bar:after,.button-group:after,.clearfix:after,.clearing-thumbs:after,.inner-wrap:after,.row .row.collapse:after,.row .row:after,.row:after,.tabs-content:after,.tabs:after,[class*=block-grid-]:after,[data-clearing]:after,hr {
+    clear: both
+}
+
+.breadcrumbs>.current:focus,.breadcrumbs>.current:focus a,.breadcrumbs>.current:hover,.breadcrumbs>.current:hover a,.button,.joyride-close-tip,.label,.sub-nav dd a,.sub-nav dt a,.sub-nav li a,.vevent abbr,a,button {
+    text-decoration: none
+}
+
+.inner-wrap,.off-canvas-wrap,.tab-bar {
+    -webkit-backface-visibility: hidden
+}
+
+meta.foundation-version {
+    font-family: "/5.2.2/"
+}
+
+meta.foundation-mq-small {
+    font-family: "/only screen/";
+    width: 0
+}
+
+meta.foundation-mq-medium,meta.foundation-mq-topbar {
+    font-family: "/only screen and (min-width:40.063em)/";
+    width: 40.063em
+}
+
+meta.foundation-mq-large {
+    font-family: "/only screen and (min-width:64.063em)/";
+    width: 64.063em
+}
+
+meta.foundation-mq-xlarge {
+    font-family: "/only screen and (min-width:90.063em)/";
+    width: 90.063em
+}
+
+meta.foundation-mq-xxlarge {
+    font-family: "/only screen and (min-width:120.063em)/";
+    width: 120.063em
+}
+
+meta.foundation-data-attribute-namespace {
+    font-family: false
+}
+
 body,html {
     height: 100%;
     font-size: 100%
