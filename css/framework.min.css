@@ -7,10 +7,6 @@
     font-weight: 400
 }
 
-.button,button,input[type=submit] {
-    -webkit-appearance: none
-}
-
 .alert-box,.button,.joyride-close-tip,.joyride-tip-guide,.label,.pricing-table .title,body,button,label {
     font-weight: 400
 }
