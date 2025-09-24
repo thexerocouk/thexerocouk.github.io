@@ -29,7 +29,7 @@ Despite its protections, PMF does not cover all aspects of Wi-Fi network securit
 ### Understanding the Wi-Fi State Machine
 To better understand the scope of PMF, let's look at the Wi-Fi state machine:
 
-![state_machine](/images/state_machine.png)
+![state_machine](/images/state_machine.webp)
 
 In the context of PMF, protection only applies to states one through three, as well as the De-authentication and Disassociation frames. With PMF enabled, it becomes impossible to inject frames and interfere directly with the state machine during these states. This restricted scope of protection raises important considerations.
 
