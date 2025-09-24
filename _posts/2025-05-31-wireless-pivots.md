@@ -9,8 +9,8 @@ tags: [wifi, wireless-pivot, rogue-ap, eap-tls, mfa, netntlm, responder, hacking
 description: "Discover how attackers exploit trusted wireless networks using rogue APs, wireless pivots, and legacy protocols to turn secure EAP-TLS deployments into invisible attack surfaces."
 keywords: wireless pivot attack rogue access point attack wifi penetration testing eap-tls attack wifi client misconfiguration wireless hacking techniques evil twin attack wifi wifi red teaming wireless attack chain responder netntlm capture wifi pentest real-world
 excerpt: "Even the most secure wireless deployments, including EAP-TLS with client certificate validation, can become entry points when endpoints are exploited in less secure environments. Here's how wireless pivots work—and why your mobile devices may be betraying you."
-image: /images/wireless-pivots-banner.png
-thumbnail: /images/wireless-pivots-banner.png
+image: /images/wireless-pivots-banner.webp
+thumbnail: /images/wireless-pivots-banner.webp
 ---
 
 ## TL;DR
@@ -44,7 +44,7 @@ First, lets break down exactly how EAP-TLS works and why it is the most secure t
 
 ## EAP-TLS: The Security Best Practice
 
-![EAP-TLS Process Flow](/images/eap-tls-20.png)
+![EAP-TLS Process Flow](/images/eap-tls-20.webp)
 
 The first thing that happens after the 802.11 Data Link is established is the STA will request  EAPoL Start (802.1X).
 
@@ -113,7 +113,7 @@ The STA did not use "test test" as the PSK for the Thomson SSID, but that does n
 
 ---
 
-![The 4-Way Handshake](/images/4-WAY-handshake.png)
+![The 4-Way Handshake](/images/4-WAY-handshake.webp)
 
 Firstly, the 4-way handshake, is a form of mutual authentication. Both the STA and AP verify that each other knows the PSK, without ever transmitting the PSK.
 
