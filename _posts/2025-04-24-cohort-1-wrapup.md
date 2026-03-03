@@ -19,7 +19,7 @@ Our **first online cohort for the Wireless Mastery course** wrapped up earlier t
 
 The live, instructor-led training was just the beginning. All participants now have **full access to the cohort recordings and materials**, which are available anytime via our training platform:
 
-[Access Your Materials Here](https://training.thexero.co.uk/courses/enrolled/2784520)
+[Access Your Materials Here](https://login.thexero.co.uk/courses/products/ee59e888-366b-4199-a3a9-5d0eb4643bc6/categories/5093a2ff-36ac-48a5-92ff-e3471170f9f9/)
 
 This includes:
 
