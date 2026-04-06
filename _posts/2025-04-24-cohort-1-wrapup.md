@@ -28,7 +28,7 @@ This includes:
 
 It was an honour to teach such a sharp group of learners, and I’m already looking forward to what we’ll do in future cohorts.
 
-If you missed out this time—don’t worry! We’re already planning the **next live training session**. Be sure to keep an eye on [https://go.thexero.co.uk/wifi-pro](https://go.thexero.co.uk/wifi-pro) or subscribe to the newsletter so you don’t miss out.
+If you missed out this time—don’t worry! We’re already planning the **next live training session**. Be sure to keep an eye on [https://training.thexero.co.uk/wifi-pro](https://training.thexero.co.uk/wifi-pro) or subscribe to the newsletter so you don’t miss out.
 
 Thanks again to everyone who joined. Until next time—  
 **Toby**
