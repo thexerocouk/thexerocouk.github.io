@@ -15,4 +15,4 @@ This FTP fuzzer has been used to fuzz and discover a number of previously undisc
 
 The project is hosted on GitHub and can be found at the following link: 
 
-<a href="https://github.com/nullsecuritynet/tools/blob/master/fuzzer/ftp-fuzz/release/ftp-fuzz.py" target="_blank">https://github.com/nullsecuritynet/tools/blob/master/fuzzer/ftp-fuzz/release/ftp-fuzz.py</a>
+<a href="https://github.com/nullsecuritynet/tools/blob/main/fuzzer/ftp-fuzz/release/ftp-fuzz.py" target="_blank">https://github.com/nullsecuritynet/tools/blob/main/fuzzer/ftp-fuzz/release/ftp-fuzz.py</a>
