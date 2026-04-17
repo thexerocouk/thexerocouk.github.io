@@ -21,4 +21,4 @@ A short demo of the WorldMail IMAP exploit module is shown below.
 <asciinema-player src="/resources/244065.cast" cols="115" rows="27" theme="monokai"></asciinema-player>
 <br />
 
-The project is available on GitHub at the following link: <a href="https://github.com/TheNullSecXero/nullsploit" target="_blank">https://github.com/TheNullSecXero/nullsploit</a>
+The project is available on GitHub at the following link: <a href="https://github.com/thexerocouk/nullsploit" target="_blank">https://github.com/thexerocouk/nullsploit</a>
