@@ -14,4 +14,4 @@ tags: [tftp, fuzzer, tool, python]
 A simple TFTP Fuzzer I wrote to discover undisclosed bugs within TFTP servers and other simple UDP based protocols.
 
 The project is hosted on GitHub and can be found at the link below:
-<a href="https://github.com/nullsecuritynet/tools/blob/master/fuzzer/tftp-fuzz/release/tftp-fuzz.py" target="_blank">https://github.com/nullsecuritynet/tools/blob/master/fuzzer/tftp-fuzz/release/tftp-fuzz.py</a>
+<a href="https://github.com/nullsecuritynet/tools/blob/main/fuzzer/tftp-fuzz/release/tftp-fuzz.py" target="_blank">https://github.com/nullsecuritynet/tools/blob/main/fuzzer/tftp-fuzz/release/tftp-fuzz.py</a>
