@@ -176,7 +176,7 @@ By understanding how each frame type functions, network engineers and enthusiast
 ---
 
 ### Got Questions?
-Want to dive deeper or request a specific topic? Leave a comment or join our [Discord Community](https://discord.gg/YEfgvuqyDn) — we're always happy to talk tech!
+Want to dive deeper or request a specific topic? Leave a comment or join our [Discord Community](https://discord.gg/invite/YEfgvuqyDn) — we're always happy to talk tech!
 
 <details>
 <summary><strong>FAQ: Control and Data Frames in Wi-Fi</strong></summary>
