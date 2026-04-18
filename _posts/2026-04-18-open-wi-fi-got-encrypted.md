@@ -57,7 +57,7 @@ OWE also supports a **transition mode**, where the AP broadcasts both an OWE SSI
 
 ## What Is OWE Designed For?
 
-OWE is squarely aimed at **public, guest, and hotspot Wi-Fi**: coffee shops, hotels, airports, conference venues (yes, including hacker conferences 👀), retail stores, and libraries. Anywhere a shared passphrase is operationally impractical. It's also increasingly relevant to **BYOD guest networks** in enterprise environments, where the wireless layer is often left open or hidden behind a captive portal that does absolutely nothing for encryption.
+OWE is squarely aimed at **public, guest, and hotspot Wi-Fi**: coffee shops, hotels, airports, conference venues (yes, including hacker conferences), retail stores, and libraries. Anywhere a shared passphrase is operationally impractical. It's also increasingly relevant to **BYOD guest networks** in enterprise environments, where the wireless layer is often left open or hidden behind a captive portal that does absolutely nothing for encryption.
 
 ---
 
