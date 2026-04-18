@@ -77,21 +77,18 @@ This is where we get real, because OWE has some significant gaps that matter a l
 
 **No access point authentication.** This is the big one. OWE encrypts the connection, but it does _nothing_ to verify the AP is legitimate. There is no mutual authentication. A client has no way to confirm it's talking to a genuine access point versus a rogue one. That means **evil twin attacks still work**. Stand up a rogue OWE AP with the same SSID, and the client happily completes the DH exchange and connects. The traffic is "encrypted" but to your access point. If you've been through my training, you'll recognise this immediately: the encryption layer changed, the trust problem didn't.
 
-<!-- DIAGRAM: Side by side comparison. Left: Legitimate OWE connection (Client -> Legit AP, green DH exchange arrows, padlock icon, label "Encrypted + Correct AP"). Right: Rogue OWE attack (Client -> Rogue AP, red DH exchange arrows, padlock icon with a red cross, label "Encrypted + Wrong AP"). Underneath both: "The client sees a lock either way." -->
-
-_The client completes a valid DH exchange and gets an encrypted session either way. Without AP authentication, it has no mechanism to tell the difference between a legitimate AP and a rogue one._
-
 **Deauth attacks still work.** Management frame protection (PMF/802.11w) is recommended alongside OWE, but it's not always deployed correctly. And as we know, "configured correctly" is a phrase that should always make your ears prick up on an engagement.
 
 **Transition mode is a downgrade path.** While OWE is broadcasting alongside an open SSID, clients that get nudged off the OWE variant (via deauth and a well-positioned open network) fall back to unencrypted. The protection disappears without the user knowing anything changed.
 
-<!-- DIAGRAM: Flow showing the downgrade attack. Step 1: Client connected to OWE SSID. Step 2: Attacker sends deauth (802.11 reason code 3). Step 3: Client disconnects and probes. Step 4: Attacker's rogue AP responds on the open SSID with stronger signal. Step 5: Client connects to open network unencrypted. Annotate "User sees no change. No warning. No lock icon." -->
-
-_The transition mode downgrade in action. A deauth plus a stronger open SSID is enough to silently pull a client off encrypted OWE onto an unencrypted open network._
 
 **It only protects the air interface.** OWE encrypts traffic between the client and the AP. Once it leaves the AP, OWE provides zero protection. It's not end-to-end encryption. HTTPS and TLS still matter on top of it.
 
 **Adoption has been slow.** Despite being part of WPA3, real-world OWE deployment is still patchy. You're more likely to still encounter traditional open networks on engagements, which means the classic passive sniffing attack surface is still very much alive.
+
+---
+
+If you're working through wireless assessments and want a single reference that covers everything from adapter setup and monitor mode through to attacking WPA3 and enterprise networks, I put together a free Wi-Fi assessment cheatsheet. It's the mind map I wish I'd had when I was starting out. Grab it at [https://training.thexero.co.uk/wifi-cheatsheet](ttps://training.thexero.co.uk/wifi-cheatsheet) — no fluff, just the commands and methodology you actually need on an engagement.
 
 ---
 
