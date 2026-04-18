@@ -103,13 +103,13 @@ While **EAP-TLS** is one of the most secure authentication methods for enterpris
 ### Next Steps
 
 **Want to secure your enterprise Wi-Fi against EAP-TLS attacks?**  
-[Check out our wireless security training](https://training.thexero.co.uk/wireless-mastery) [https://training.thexero.co.uk/wireless-mastery](https://training.thexero.co.uk/wireless-mastery) or join our [Discord community](https://discord.gg/YEfgvuqyDn) for real-time support and updates.
+[Check out our wireless security training](https://training.thexero.co.uk/wireless-mastery) [https://training.thexero.co.uk/wireless-mastery](https://training.thexero.co.uk/wireless-mastery) or join our [Discord community](https://discord.gg/invite/YEfgvuqyDn) for real-time support and updates.
 
 ---
 
 ### Useful Links
 - [IEEE 802.1X Overview](https://en.wikipedia.org/wiki/IEEE_802.1X)
-- [OWASP Guide to Wireless Security](https://owasp.org/www-project-mobile-top-10/)
+- [OWASP Guide to Wireless Security](https://owasp.org/www-project-wi-fi-security-testing-guide/)
 - [Understanding TLS Authentication](https://www.cloudflare.com/learning/ssl/what-is-ssl/)
 
 ---
