@@ -120,7 +120,7 @@ To ease migration, WPA3 allows for a **transition mode** where WPA2 and WPA3 coe
 ## Further Reading
 
 - [Wi-Fi Alliance: WPA3 Overview](https://www.wi-fi.org/discover-wi-fi/security)
-- [IEEE 802.11 Standards](https://standards.ieee.org/ieee/802.11/)
+- [IEEE 802.11 Standards](https://standards.ieee.org/search/?q=802.11)
 
 ---
 
