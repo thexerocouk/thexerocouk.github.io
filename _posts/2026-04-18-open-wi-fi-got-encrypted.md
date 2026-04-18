@@ -116,3 +116,6 @@ Treat OWE as a step forward, not a barrier. Understand what the protocol does an
 
 Wi-Fi isn't a black art. It just rewards the people who take the time to understand it properly.
 
+---
+
+If you want to go beyond posts like this and actually build that understanding from the ground up, that's exactly what my [WiFi Novice to Professional](https://training.thexero.co.uk/wifi-pro) program is built for. We go from the fundamentals of how 802.11 actually works all the way through to WPA3, enterprise attacks, wireless pivoting, and everything in between — with real labs, not just theory. It's the same material I've taught at OWASP, at conferences, and to professional pentest teams, and it's constantly updated as the technology moves on. If wireless keeps coming up in your engagements and you want to stop guessing and start knowing, come and take a look.
