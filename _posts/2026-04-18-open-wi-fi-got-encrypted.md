@@ -19,7 +19,7 @@ That's the problem OWE was designed to fix. Let's dig into what it is, how it ac
 
 ## What Is OWE?
 
-OWE stands for **Opportunistic Wireless Encryption**. It's defined in [RFC 8110](https://datatracker.ietf.org/doc/html/rfc8110), incorporated into the IEEE 802.11 standard, and marketed by the Wi-Fi Alliance under the friendlier name **Wi-Fi CERTIFIED Enhanced Open™**. It became part of the broader WPA3 specification.
+OWE stands for **Opportunistic Wireless Encryption**. It's defined in [RFC 8110](https://datatracker.ietf.org/doc/html/rfc8110), incorporated into the IEEE 802.11 standard, and marketed by the Wi-Fi Alliance under the friendlier name **Enhanced Open**. It became part of the broader WPA3 specification.
 
 The goal? Replace traditional open (completely unencrypted) Wi-Fi with something that gives you encryption in transit _without requiring a password_. That last part is the clever bit. OWE gives you the encryption benefit of WPA2 with none of the friction of managing a shared passphrase on a public network.
 
