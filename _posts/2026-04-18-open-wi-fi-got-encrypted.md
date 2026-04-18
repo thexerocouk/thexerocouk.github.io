@@ -88,7 +88,7 @@ This is where we get real, because OWE has some significant gaps that matter a l
 
 ---
 
-If you're working through wireless assessments and want a single reference that covers everything from adapter setup and monitor mode through to attacking WPA3 and enterprise networks, I put together a free Wi-Fi assessment cheatsheet. It's the mind map I wish I'd had when I was starting out. Grab it at [https://training.thexero.co.uk/wifi-cheatsheet](ttps://training.thexero.co.uk/wifi-cheatsheet) — no fluff, just the commands and methodology you actually need on an engagement.
+If you're working through wireless assessments and want a single reference that covers everything from adapter setup and monitor mode through to attacking WPA3 and enterprise networks, I put together a free Wi-Fi assessment cheatsheet. It's the mind map I wish I'd had when I was starting out. Grab it at [https://training.thexero.co.uk/wifi-cheatsheet](https://training.thexero.co.uk/wifi-cheatsheet), no fluff, just the commands and methodology you actually need on an engagement.
 
 ---
 
