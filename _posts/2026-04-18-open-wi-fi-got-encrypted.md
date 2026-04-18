@@ -51,11 +51,6 @@ The result: every client on the network gets its own per-session encryption key.
 
 OWE also supports a **transition mode**, where the AP broadcasts both an OWE SSID and a traditional open SSID in parallel. Clients that support OWE connect to the encrypted version automatically; legacy devices fall back to open. It's a backwards-compatible rollout option. Useful, but as we'll cover, not without risk.
 
-<!-- SCREENSHOT: Wireshark or airodump-ng output showing two BSSIDs with the same SSID, one advertising OWE RSN capabilities and one showing as open. Alternatively a scan output from wash or iw showing the paired SSIDs side by side. -->
-
-![The full OWE connection flow](/images/owe-transition-mode.webp)
-_OWE transition mode in the wild. The same physical AP advertises two SSIDs: one with OWE RSN capabilities, one open for legacy clients. Both are visible to anyone scanning._
-
 ---
 
 ## What Is OWE Designed For?
