@@ -34,6 +34,7 @@ With a standard open network, there's no PMK at all. The 4-way handshake never h
 ![Open Readable Packets](/images/open-readable.webp)
 _On a traditional open network, data frames hit the air with no encryption. Anyone in range can read them._
 
+
 With OWE, during the 802.11 **association phase**, the client and the access point perform a **Diffie-Hellman (DH) key exchange**, by default using NIST P-256 (Group 19, elliptic curve). Both sides generate a public/private key pair on the fly, exchange their public keys, and independently compute a shared secret. That secret derives the PMK. From there, the standard **4-way handshake** runs exactly as you know it, producing a PTK (Pairwise Transient Key) unique to that session.
 
 ![OWE Association Request](/images/owe-association-request.webp)
@@ -46,6 +47,7 @@ _The AP responds with its own DH public key. Both sides now have everything they
 
 ![The full OWE connection flow](/images/full-owe-flow.webp)
 _The full OWE connection flow. The DH exchange slots neatly into the existing association phase. The 4-way handshake then runs as normal, just with a PMK derived from the DH shared secret rather than a pre-shared passphrase._
+
 
 The result: every client on the network gets its own per-session encryption key. Even if two users are on the same OWE network, they cannot decrypt each other's traffic. That's a meaningful step forward.
 
