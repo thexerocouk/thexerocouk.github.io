@@ -1,5 +1,6 @@
 --- 
-layout: post title: "Open Wi-Fi Got Encrypted. Here's Why Your Rogue AP Still Works." 
+layout: post
+title: "Open Wi-Fi Got Encrypted. Here's Why Your Rogue AP Still Works." 
 date: 2026-04-18 
 author: TheXero
 comments: true 
