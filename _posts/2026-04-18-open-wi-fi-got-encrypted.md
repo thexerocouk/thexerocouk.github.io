@@ -45,10 +45,12 @@ _An OWE Association Request frame. The Diffie-Hellman Parameter element is embed
 ![OWE Association Response](/images/owe-association-response.webp)
 _The AP responds with its own DH public key. Both sides now have everything they need to independently derive the same shared secret, without it ever being transmitted over the air._
 
+<br />
 
 ![The full OWE connection flow](/images/full-owe-flow.webp)
 _The full OWE connection flow. The DH exchange slots neatly into the existing association phase. The 4-way handshake then runs as normal, just with a PMK derived from the DH shared secret rather than a pre-shared passphrase._
 
+<br />
 
 The result: every client on the network gets its own per-session encryption key. Even if two users are on the same OWE network, they cannot decrypt each other's traffic. That's a meaningful step forward.
 
@@ -124,3 +126,5 @@ Wi-Fi isn't a black art. It just rewards the people who take the time to underst
 If you want to go beyond posts like this and actually build that understanding from the ground up, that's exactly what my [WiFi: Novice to Professional](https://training.thexero.co.uk/wifi-pro) program is built for. We go from the fundamentals of how 802.11 actually works all the way through to WPA3, enterprise attacks, and wireless pivoting with real labs, not just theory. 
 
 It's the same material I've taught at OWASP, at conferences, and to professional pentest teams. If wireless keeps coming up in your engagements and you want to stop guessing and start knowing, come and take a look.
+
+<br />
