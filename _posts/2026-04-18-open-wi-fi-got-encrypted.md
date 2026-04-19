@@ -41,6 +41,7 @@ With OWE, during the 802.11 **association phase**, the client and the access poi
 ![OWE Association Request](/images/owe-association-request.webp)
 _An OWE Association Request frame. The Diffie-Hellman Parameter element is embedded in the tagged parameters, carrying the client's public key as part of the standard association process._
 
+<br />
 
 ![OWE Association Response](/images/owe-association-response.webp)
 _The AP responds with its own DH public key. Both sides now have everything they need to independently derive the same shared secret, without it ever being transmitted over the air._
