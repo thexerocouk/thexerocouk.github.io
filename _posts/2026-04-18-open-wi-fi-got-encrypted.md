@@ -31,12 +31,16 @@ Here's where it gets interesting. If you've been through the 4-way handshake eno
 
 With a standard open network, there's no PMK at all. The 4-way handshake never happens. Traffic hits the air in plaintext. Anyone with a wireless adapter in monitor mode and Wireshark running can read it. Full stop.
 
+<br />
+
 ![Open Readable Packets](/images/open-readable.webp)
 _On a traditional open network, data frames hit the air with no encryption. Anyone in range can read them._
 
 <br />
 
 With OWE, during the 802.11 **association phase**, the client and the access point perform a **Diffie-Hellman (DH) key exchange**, by default using NIST P-256 (Group 19, elliptic curve). Both sides generate a public/private key pair on the fly, exchange their public keys, and independently compute a shared secret. That secret derives the PMK. From there, the standard **4-way handshake** runs exactly as you know it, producing a PTK (Pairwise Transient Key) unique to that session.
+
+<br />
 
 ![OWE Association Request](/images/owe-association-request.webp)
 _An OWE Association Request frame. The Diffie-Hellman Parameter element is embedded in the tagged parameters, carrying the client's public key as part of the standard association process._
